@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    #mapon {
+     height: 500px;
+     width: 40%;
+     }
+    #mapoff {
+      height:500px;
+      width: 60%;
+    }
+    </style>
+  </head>
+  <body>
+
+    <header>
+
+      <!--Navigation bar-->
+
+      <h2>Our Events</h2>
+      
+    </header>
+
+    <!--Subheader-->
+    <div class="jumbotron">
+      <h3 class="col-xs-6" id="on-campus">On-campus</h3>
+      <h3 class="col-xs-6" id="off-campus">Off-campus</h3>
+    </div>
+
+    <!--Maps-->
+    <section class="jumbotron">
+      <div class="row">
+        <div class="col-xs-6" id="mapon"></div>
+        <div class="col-xs-6" id="mapoff"></div>
+      </div>
+    </section>
+
+      <script>
+
+      <!--Maps-->
+      function initMap() {
+        var center = {lat: 50.86612, lng: -0.086066};
+        var falmerbar = {lat: 50.864566, lng: -0.088871};
+        var mapon = new google.maps.Map(document.getElementById('mapon'), {
+          zoom: 16,
+          center: center
+        });
+
+        var centeroff = {lat: 50.825301, lng: -0.135794};
+        var vip = {lat: 50.820874, lng: -0.136496};
+        var mapoff = new google.maps.Map(document.getElementById('mapoff'), {
+          zoom: 15,
+          center: centeroff
+        });
+
+        <!--Markers of places-->
+        var marker = new google.maps.Marker({
+          position: falmerbar,
+          map: mapon
+        });
+
+        var marker = new google.maps.Marker({
+          position: vip,
+          map: mapoff
+        });
+
+        <!--Markers of events-->
+      }
+      </script>
+
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT4juyBsVpORzdkZtGeLc0kmeEG7zN5nQ&callback=initMap">
+      </script>
+
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT4juyBsVpORzdkZtGeLc0kmeEG7zN5nQ&callback=initMap">
+      </script>
+
+  </body>
+</html>
