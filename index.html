@@ -2,38 +2,96 @@
 <html lang="en-US">
 <head>
   <title> Italian Society - University of Sussex</title>
+  <meta name="description" content="The Italian Society is part of the Students' Union at the University of Sussex. It is more than a society, it is a family for all students far from home. We bring together students around food, fun, and cultural exchange. There is no membership fee and no obligation to commit to anything.">
+  <meta name="keywords" content="italiansocietysussexuni, sussexstudent, sussex, society, italian, italiansociety, mediterranean, events">
+  <meta name="author" content="Antonia Donvito, Elena Buzzi">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header>
-    <h1>Italian Society - University of Sussex</h1>
-
     <!--Navigation bar-->
-    <nav>
-      <li>page1</li>
-      <li>page2</li>
-      <li>page3</li>
-      <li>page4</li>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" ><img src="logo.png" style="max-width:100px" bottom="10px"></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">HOME</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">HISTORY</a></li>
+                  <li><a href="#">OUR MISSION</a></li>
+                </ul>
+            </li>
+          <li><a href="#">MEET THE TEAM</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="#">CONTACT/JOIN</a></li>
+        </ul>
+
+      <!--Social buttons-->
+      <ul class="navbarnavbar-nav navbar-right">
+          <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a>
+          <a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
+          <a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
+      </ul>
+      </div>
     </nav>
   </header>
 
-  <!--Social buttons, email submission form, and membership-->
-  <div>
-    <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a>
-      <a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
-      <a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
-        <form action="/mailing_list.php" method="post" target="_blank">
-          <fieldset>
-          Email: <input type="text" name="email" size="50" placeholder="Your email" value="" />
-          <input type="submit" name="submit" value="Join Our Mailing List"/>
-          </fieldset>
-        </form>
-      <p>Membership is free. Become a member of the Society by logging in on the <a href="https://www.sussexstudent.com/organisation/italian/">Students' Union website </a>
-      </p>
+  <!--Slideshow-->
+  <div id="maincarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="med.jpg">
+        <div class="carousel-caption">
+          <h3> Caption 1 </h3> </div>
+      </div>
+
+      <div class="item">
+        <img src="pizza.jpg">
+      </div>
+
+      <div class="item">
+        <img src="nuposto_yuki.jpg">
+      </div>
+
+      <div class="item">
+        <img src="med1.jpg">
+      </div>
+    </div>
   </div>
+
+  <!--Footer-->
+  <footer id="page-footer">
+    <hr>
+      <div class="container">
+
+
+      <div>
+          <form action="/mailing_list.php" method="post" target="_blank" class="pull-right">
+            <fieldset>
+            Email: <input type="text" name="email" size="35" placeholder="Your email" value="" />
+            <input type="submit" name="submit" class="btn-sm btn-success" value="Join Our Mailing List"/>
+            </fieldset>
+          </form>
+        <p>Membership is free.
+          <br>
+          Become a member of the Society by logging in on the <a href="https://www.sussexstudent.com/organisation/italian/">Students' Union website </a>
+        </p>
+      </div>
+
+      </footer>
+
+      <!-- jQuery and js -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
