@@ -45,7 +45,8 @@
   </header>
 
   <!--Slideshow-->
-  <div id="maincarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+  <div class="container">
+    <div id="maincarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
 
     <div class="carousel-inner">
       <div class="item active">
@@ -67,27 +68,24 @@
       </div>
     </div>
   </div>
+  </div>
 
   <!--Footer-->
-  <footer id="page-footer">
+  <div class="footer">
     <hr>
-      <div class="container">
-
-
-      <div>
-          <form action="/mailing_list.php" method="post" target="_blank" class="pull-right">
+        <div>
+          <p class="column">Membership is free.
+            <br>
+            Become a member of the Society by logging in on the <a href="https://www.sussexstudent.com/organisation/italian/">Students' Union website </a>
+          </p>
+          <form class="column" action="/mailing_list.php" method="post" target="_blank">
             <fieldset>
             Email: <input type="text" name="email" size="35" placeholder="Your email" value="" />
             <input type="submit" name="submit" class="btn-sm btn-success" value="Join Our Mailing List"/>
             </fieldset>
           </form>
-        <p>Membership is free.
-          <br>
-          Become a member of the Society by logging in on the <a href="https://www.sussexstudent.com/organisation/italian/">Students' Union website </a>
-        </p>
       </div>
-
-      </footer>
+    </div>
 
       <!-- jQuery and js -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -4,31 +4,52 @@ body{
 }
 
 .navbar {
+  overflow: hidden;
+	display: block;
   font-family: 'Acme', sans-serif;
   font-size: 20px;
+  margin: 50px auto;
+  max-width: 85%;
+  position: absolute;
+  z-index: 10;
+  left: 13%;
+  right: 13%
 }
 
-.carousel{
-  margin: 0 auto;
-  width: 800px;
-  max-height: 100vh - 50px;
-  padding: 20px auto 20px auto;
-}
+.container {
+		background: rgba(255, 255, 255, 0.6);
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 20px;
+		border-radius: 5px;
+		padding: 20px 40px 20px 40px;
+		font-family:#;
+		font-size: 24px;
+		text-align: center;
+		line-height: 30px;
+    position: relative;
+		}
 
-.carousel, .item, .active{
-  max-height: 90vh;
-  max-width: 100%;
-  text-align: center;
-}
-
-
-footer {
+.footer {
   position:absolute;
   bottom:0;
+  left: 0;
   width: 100%;
+  padding: 20px;
   height: 16px;
   color: #ECE4E2;
+  font-family: "Acme"
   font-size: 12px;
+  margin-bottom: -8%;
+}
+
+hr{
+  max-width: 100%
+}
+
+.column{
+  width: 50%;
+  float: left;
 }
 
 .fa{
@@ -38,7 +59,7 @@ footer {
   font-size: 12px;
   line-height: 1.42;
   border-radius: 15px;
-  margin-left: 35px;
+  margin-left: 30px;
   margin-top: 10px;
 }
 .fa-facebook{
@@ -55,4 +76,7 @@ footer {
     color: white;
 }
 
+
 <!--Maps-->
+.mapon, .mapoff{
+}
