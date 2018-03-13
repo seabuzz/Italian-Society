@@ -1,39 +1,44 @@
-
 body {
   background-color: #222;
-}
-
-ul id {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: white;
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      float: right;
   }
 
+  li {
+      float: left;
+  }
 
+  li a {
+      font-family: 'Acme', sans-serif;
+      display: block;
+      color: white;
+      text-align: left;
+      padding: 14px 14px;
+      text-decoration: none;
+  }
 
+  li a:hover:not(.active) {
+      background-color: #111;
+  }
 
+  .active {
+      background-color: #4CAF50;
+  }
 
-li {
-  text-decoration: none;
-    display: inline;
-    width: 40px;
-    padding: 14px 16px;
-    color: white;
-
-
-
-}
-ul li a{
-  text-decoration: none;
-  color: white;
-  font-family: Arial;
-  font-size: 20px;
-}
-
-ul li:hover{
-  background: grey;
-}
+  footer {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: 8px;
+    color: #ECE4E2;
+    font-size: 12px;
+      }
 
 #cssbar {
 background-color: black;
@@ -47,22 +52,33 @@ color: white;
 #img {
     height: auto;
     width: auto;
-    max-height: 90px;
+    max-height: 100px;
     max-width: 250px;
     position: right;
 }
 
+
 h1 {
-  font-family: Arial;
+  padding: 0;
+  font-family: 'forum';
   color: white;
   text-align: center;
-  padding: 20px;
+  font-size: 35px;
 }
 
+.logo{
+  margin: -20px;
+  color: white;
+  width: 200px;
+  text-align: center;
+
+
+
+}
 .circular {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   margin: 1em auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,34 +86,31 @@ h1 {
   -webkit-border-radius: 99em;
   -moz-border-radius: 99em;
   border-radius: 99em;
-  border: 5px solid #eee;
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
-
+  border: 3px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
 	}
 
   .table {
   display: grid;
   grid-template-columns: minmax(40vw, 1fr);
-  grid-template-rows: minmax(50vh, 1fr);
+  grid-template-rows: minmax(40vh, 1fr);
   align-items: center;
   justify-content: center;
-
   }
+
   .column {
     flex: 33%;
     max-width: 33%;
     padding: 0px 60px 10px 60px;
     vertical-align: middle;
-
   }
+
   .row {
     display: flex;
-
     vertical-align: middle;
     margin: auto;
-       margin-left: auto;
-       margin-right: auto;
-
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .fa {
@@ -112,17 +125,116 @@ h1 {
     .fa-facebook {
     background: #3B5998;
     color: white;
+    margin:3px;
    }
 
   .fa-twitter {
    background: #55ACEE;
    color: white;
+   margin:3px;
  }
 
  .fa-instagram {
    background: #e1306c;
    color: white;
+   margin:3px;
  }
 .social {
   float: right;
+
 }
+
+figcaption {
+  font-size: 20px;
+  color: white;
+  display: block;
+  font-family: 'forum';
+  text-align: center;
+}
+
+/*dfn */
+
+dfn {
+  background: rgba(0,0,0,0.2);
+  border-bottom: dashed 1px rgba(0,0,0,0.8);
+  padding: 0 0.4em;
+  cursor: default;
+  font-style: normal;
+  position: relative;
+
+}
+dfn::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px; left: 0;
+  opacity: 0;
+  width: 230px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+}
+dfn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px; left: 20px;
+  opacity: 0;
+  width: 0; height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0,0,0,0.8);
+  transition: opacity 250ms, top 250ms;
+}
+dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+dfn:hover::after,
+dfn:hover::before {opacity: 1;}
+dfn:hover::after {top: 30px;}
+dfn:hover::before {top: 20px;}
+
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0,0,0,0.5);
+  -webkit-border-radius: 120em;
+  -moz-border-radius: 120em;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute ;
+  top: 50%;
+  left: 50%;
+  right: -70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center ;
+  font-family: 'forum';
