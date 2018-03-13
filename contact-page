@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/csscontact.css">
+</head>
+
+<div id=navigationbar>
+<ul id=cssbar>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">About</a></li>
+  <li><a href="news.asp">Events</a></li>
+  <li><a href="contact.asp">Meet the team</a></li>
+  <li><a href="about.asp">Join us</a></li>
+</ul>
+</div>
