@@ -2,15 +2,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="css/csscontact.css">
+  <link rel="stylesheet" type="text/css" href="csscontact.css">
+<link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<div id=navigationbar>
-<ul id=cssbar>
+<header>
+  <ul>
   <li><a href="default.asp">Home</a></li>
   <li><a href="news.asp">About</a></li>
-  <li><a href="news.asp">Events</a></li>
-  <li><a href="contact.asp">Meet the team</a></li>
-  <li><a href="about.asp">Join us</a></li>
-</ul>
+  <li><a href="contact.asp">History</a></li>
+  <li><a href="about.asp">Our Mission</a></li>
+  <li><a href="about.asp">Meet the Team</a></li>
+
+</ul
+<div class="social">
+<a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a>
+<a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
+<a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
 </div>
+</header>
+
+
+<body>
+<h1> Our committee</h1>
+
+<div class="table">
+  <div class="row">
+    <div class="column">
+      <img class="circular" src=lucaes.jpg>
+      <figcaption><dfn data-info="President. Ciao sono Antonella e vengo da Bari. Studio psicologia e ho 21 anni. Tra le mie passioni c'è la pizza, è molto buona"> Luca Pizzimenti</dfn></figcaption></div>
+
+    <div class="column">
+      <div class="container">
+        <img class="circular" src=lauraes.jpg>
+          <div class="overlay">
+            <div class="text">Questo è invece un altro esempio! Ciao ciao sono Elena e vengo da lalala ovviamente anche a me piace la pizza. Cosa succede se scrivo più cose e più testo. DIciamo che almeno 6 o 7 righe si riescono a scrivere, no?</div>
+          </div>
+        </div>
+        <figcaption>Laura Spagliardi </figcaption>
+       </div>
+
+
+    <div class="column">
+      <div class="container">
+        <img class="circular" src=elenaes.jpg class="image">
+          <div class="overlay">
+            <div class="text">Questo è invece un altro esempio! Ciao ciao sono Elena e vengo da lalala ovviamente anche a me piace la pizza. Cosa succede se scrivo più cose e più testo. DIciamo che almeno 6 o 7 righe si riescono a scrivere, no?</div>
+          </div>
+        </div>
+        <figcaption>Elena Buzzi</figcaption>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="container">
+      <img class="circular" src=silviaes.jpg>
+      <div class="overlay">
+        <div class="text">XCiao sono Silvia! e vengo da lalala ovviamente anche a me piace la pizza. Cosa succede se scrivo più cose e più testo. DIciamo che almeno 6 o 7 righe si riescono a scrivere, no?</div>
+      </div>
+    </div>
+      <figcaption>Silvia Anderle</figcaption>
+    </div>
+
+    <div class="column">
+      <div class="container">
+        <img class="circular" src=joshes.jpg>
+        <div class="overlay">
+          <div class="text">Ciao Sono joshhhhhh anche a me piace la pizza anzi io stesso sono una pizza con l'ananas giusto per cambiare e essere originali insomma ciao ciao buonanotte va bene così o no?</div>
+        </div>
+      </div>
+      <figcaption>Joshua Ricci</figcaption></div>
+
+
+ <div class="column">
+      <img class="circular" src=wewant.png> </div>
+
+
+  </div>
+</div>
+<!--Footer-->
+<footer id="page-footer">
+  <hr>
+    <div class="container">
+
+
+    <div>
+      <img class="logo" src=italianlogowhite.gif>
+        <form action="/mailing_list.php" method="post" target="_blank" class="pull-right">
+          <fieldset>
+          Email: <input type="text" name="email" size="35" placeholder="Your email" value="" />
+          <input type="submit" name="submit" class="btn-sm btn-success" value="Join Our Mailing List"/>
+          </fieldset>
+        </form>
+      <p>Membership is free.
+        <br>
+        Become a member of the Society by logging in on the <a href="https://www.sussexstudent.com/organisation/italian/">Students' Union website </a>
+      </p>
+    </div>
+
+    </footer>
+
+</body>
+</html>
