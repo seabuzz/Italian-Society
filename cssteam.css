@@ -1,7 +1,11 @@
 
-body {
-  background-color: #222;
-  }
+body{
+  text-align:center;
+  background-image: repeating-linear-gradient(60deg, #333, #333 10px, #222 10px, #222 20px);
+  opacity: 50%;
+
+}
+
 
   ul {
       list-style-type: none;
@@ -43,15 +47,6 @@ body {
       }
 
 
-#cssbar {
-background-color: black;
-opacity: 0.2;
-filter: alpha(opacity=80);
-padding: 30px;
-text-align: center;
-color: white;
-
-}
 #img {
     height: auto;
     width: auto;
@@ -63,12 +58,16 @@ color: white;
 
 h1 {
   margin: 0;
-  padding: 50px 50px 10px 50px;
-  font-family: 'forum';
+  padding: 10px 50px 10px 50px;
   color: white;
   text-align: center;
   font-size: 35px;
+  font: 60px/1.0 'The Girl Next Door';
+ color: white;
+ text-shadow: 3px 8px 5px rgba(0,0,0,0.3);
 }
+
+
 
 .logo{
   margin: -20px;
@@ -89,9 +88,9 @@ h1 {
   background-position: center center;
   -webkit-border-radius: 99em;
   -moz-border-radius: 99em;
-  border-radius: 99em;
+  border-radius: 50%;
   border: 3px solid #eee;
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
 	}
 
   .table {
@@ -101,13 +100,18 @@ h1 {
   align-items: center;
   justify-content: center;
 
+
+
+
   }
 
   .column {
     flex: 33%;
     max-width: 33%;
-    padding: 0px 60px 10px 60px;
+    padding: 0px 30px 0px 30px;
     vertical-align: middle;
+
+
   }
 
   .row {
@@ -116,15 +120,18 @@ h1 {
     margin: auto;
     margin-left: auto;
     margin-right: auto;
+
   }
 
   .fa {
     padding: 10px;
     font-size: 30px;
-    width: 15px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    float: left;
   }
 
     .fa-facebook {
@@ -145,16 +152,15 @@ h1 {
    margin:3px;
  }
 .social {
-  float: left;
+  float: right;
 
 }
 
 figcaption {
-  font-size: 20px;
-  color: white;
-  display: block;
-  font-family: 'forum';
-  text-align: center;
+  font: 30px/1.0 'Just Another Hand', Helvetica, sans-serif;
+ color: white;
+ text-shadow: 3px 8px 5px rgba(0,0,0,0.3);
+ font-size: 40px;
 }
 
 /*dfn */
