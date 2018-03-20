@@ -12,6 +12,7 @@ h2{
   font-size: 20px;
   margin: 0 auto;
   max-width: 100%;
+  max-height: 50px;
 }
 #navbar-homepage {
   overflow: hidden;
@@ -60,36 +61,46 @@ hr{
   float: left;
 }
 
-.fa{
-  width: 30px;
-  height: 30px;
-  padding: 6px;
-  font-size: 12px;
-  line-height: 1.42;
-  border-radius: 15px;
-  margin-left: 30px;
-  margin-top: 10px;
-}
-.fa-facebook{
-    background: #3B5998;
-    color: white;
-}
-.fa-twitter{
-    background: #55ACEE;
-    color: white;
-    margin-right: 40px;
-}
-.fa-instagram{
-    background: royalblue;
-    color: white;
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  float: left;
+  margin-left: 12px;
+  margin-top: 5px;
 }
 
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+ }
+
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+ margin-right: 20px;
+}
+
+.fa-instagram {
+ background: royalblue;
+ color: white;
+}
 
 <!--Maps-->
 .mapon, .mapoff{
 }
 
-#date,#description,#place{
+.center-align-text{
+  float: none;
+  display: table-cell;
+  vertical-align: center;
+}
+
+#date,#description,#place,#flag{
   text-align: left;
 }
 
@@ -106,6 +117,15 @@ hr{
 
 #maps{
   background-color: #222;
+}
+
+#mapon {
+ height: 450px;
+ width: 30%;
+ }
+#mapoff {
+  height: 450px;
+  width: 55%;
 }
 
 #topBtn {

@@ -2,37 +2,51 @@
 <html lang="en-US">
 <head>
   <title> Italian Society - University of Sussex</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="title" content="Italian Society University of Sussex">
   <meta name="description" content="The Italian Society is part of the Students' Union at the University of Sussex. It is more than a society, it is a family for all students far from home. We bring together students around food, fun, and cultural exchange. There is no membership fee and no obligation to commit to anything.">
   <meta name="keywords" content="italiansocietysussexuni, sussexstudent, sussex, society, italian, italiansociety, mediterranean, events">
   <meta name="author" content="Antonia Donvito, Elena Buzzi">
+  <meta name="robots" content="index, follow">
+
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
   <header>
     <!--Navigation bar-->
-    <nav class="navbar navbar-inverse" id="navbar-homepage">
+    <nav class="navbar navbar-collapse" id="navbar-homepage">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" ><img src="logo.png" style="max-width:100px" bottom="10px"></a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Italian Society</a>
         </div>
+        <div class="collapse navbar-collapse" id="mainnavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">HOME</a></li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">HISTORY</a></li>
-                  <li><a href="#">OUR MISSION</a></li>
-                </ul>
-            </li>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html">HISTORY</a></li>
+              <li><a href="about.html">MISSION</a></li>
+            </ul>
+          </li>
           <li><a href="team.html">MEET THE TEAM</a></li>
           <li><a href="events.html">EVENTS</a></li>
           <li><a href="join.html">CONTACT/JOIN</a></li>
         </ul>
+
 
       <!--Social buttons-->
       <ul class="navbarnavbar-nav navbar-right">
@@ -40,6 +54,7 @@
           <a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
           <a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
       </ul>
+      </div>
       </div>
     </nav>
   </header>
@@ -89,10 +104,9 @@
   </div>
 
       <!-- jQuery and js -->
+      <script src="jquery-3.3.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="main.js"></script>
-
 
 </body>
 </html>

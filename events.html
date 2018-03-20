@@ -6,17 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Acme|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    #mapon {
-     height: 450px;
-     width: 30%;
-     }
-    #mapoff {
-      height: 450px;
-      width: 55%;
-    }
-    </style>
   </head>
+
   <body>
 
     <header>
@@ -25,21 +16,27 @@
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" ><img src="logo.png" style="max-width:100px" bottom="10px"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" >Italian Society</a>
           </div>
+          <div class="collapse navbar-collapse" id="mainnavbar">
           <ul class="nav navbar-nav">
             <li><a href="index.html">HOME</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">HISTORY</a></li>
-                <li><a href="#">COMMITTEE</a></li>
+                <li><a href="about.html">HISTORY</a></li>
+                <li><a href="about.html">MISSION</a></li>
               </ul>
             </li>
-            <li><a href="#">MEET THE TEAM</a></li>
+            <li><a href="team.html">MEET THE TEAM</a></li>
             <li class="active"><a href="events.html">EVENTS</a></li>
-            <li><a href="#">CONTACT/JOIN</a></li>
+            <li><a href="join.html">CONTACT/JOIN</a></li>
           </ul>
 
         <!--Social buttons-->
@@ -49,6 +46,7 @@
             <a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
         </ul>
         </div>
+      </div>
       </nav>
 
     </header>
@@ -57,53 +55,55 @@
 
 
     <!--Events-->
-    <section class="jumbotron">
+    <section class="jumbotron container-fluid">
       <div class="row">
-        <div class="col-xs-6" id="events_next">
+        <div class="col-sm-6" id="events_next">
           <h2> Next Events </h2>
           <div>
 
           </div>
         </div>
-        <div class="col-xs-6" id="events_past">
+
+        <div class="col-sm-6" id="events_past">
           <h2> Past Events </h2>
           <div class="row">
-            <div class="col-xs-3" id="date"> 26/03 </div>
-            <div class="col-xs-5" id="description"> Mediterranean Night </div>
-            <div class="bottom-align-text col-xs-2" id="place">Al Duomo</div>
-            <div class="bottom-align-text col-xs-1" id="flag"> <img src="dance.png"> </div>
+            <div class="col-sm-4 center-align-text" id="date"> 26/03 </div>
+            <div class="col-sm-4 center-align-text" id="description"> Mediterranean Night </div>
+            <div class="col-sm-4 center-align-text" id="place"><img src="dance.png">Al Duomo</div>
           </div>
           <div>
-            <div class="col-xs-3" id="date"> 4/04 </div>
-            <div class="bottom-align-text col-xs-6" id="description"> Easter Party </div>
-            <div class="bottom-align-text col-xs-3" id="place"></div>
+            <div class="col-sm-3 center-align-text" id="date"> 4/04 </div>
+            <div class="center-align-text col-sm-4" id="description"> Easter Party </div>
+            <div class="center-align-text col-sm-3" id="place"></div>
           </div>
         </div>
+
       </div>
       </section>
 
       <!--Maps-->
-
+      <section class="container">
       <div class="jumbotron" id="maps">
         <h3 class="col-xs-6" id="on-campus">On-campus</h3>
         <h3 class="col-xs-6" id="off-campus">Off-campus</h3>
+      </div>
+      <div class="jumbotron" id="maps">
         <div class="col-xs-6" id="mapon"></div>
         <div class="col-xs-6" id="mapoff"></div>
       </div>
-
+    </section class="container">
 
 
     <!--Scroll to top button-->
     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
-    <script src="css/bootstrap.min.js"></script>
-    <script src="events.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="main.js"></script>
+    <script src="events.js"></script>
     <script   async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT4juyBsVpORzdkZtGeLc0kmeEG7zN5nQ&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT4juyBsVpORzdkZtGeLc0kmeEG7zN5nQ&callback=initMap" type="text/javascript">
     </script>
-
 
   </body>
 </html>
