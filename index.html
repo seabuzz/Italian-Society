@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -21,7 +21,7 @@
 <body>
   <header>
     <!--Navigation bar-->
-    <nav class="navbar navbar-collapse" id="navbar-homepage">
+    <nav class="navbar navbar-default navbar-collapse" id="navbar-homepage">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
@@ -49,7 +49,7 @@
 
 
       <!--Social buttons-->
-      <ul class="navbarnavbar-nav navbar-right">
+      <ul class="navbar navbar-nav navbar-right">
           <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a>
           <a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
           <a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
@@ -60,28 +60,50 @@
   </header>
 
   <!--Slideshow-->
-  <div class="container container-slide">
-    <div id="maincarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+  <div class="container fill">
+    <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
 
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="med.jpg">
-          <div class="carousel-caption">
-            <h3> Caption 1 </h3> </div>
-          </div>
+          <!--Carousel items-->
+          <div class="carousel-inner">
 
-          <div class="item">
-            <img src="pizza.jpg">
-          </div>
+            <div class="item active">
+              <div class="fill" style="background-image: url('med.jpg');">
+                <div class="container">
+                </div>
+              </div>
+            </div>
 
-          <div class="item">
-            <img src="nuposto_yuki.jpg">
-          </div>
+            <div class="item">
+              <div class="fill" style="background-image:url('pizza.jpg');">
+                <div class="container">
+                </div>
+              </div>
+            </div>
 
-          <div class="item">
-            <img src="med1.jpg">
+            <div class="item">
+              <div class="fill" style="background-image: url('nuposto_yuki.jpg');">
+                <div class="container">
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="fill" style="background-image:url('med1.jpg');">
+                <div class="container">
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+
+        <div class="title hidden-xs">
+          <h1 id="title">Italian society</h1>
+          <h3 id="subtitle">A place where every student can feel at home</h3>
+          <h1 id="ussu">University of Sussex Students' Union</h1>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -90,16 +112,8 @@
   <div class="footer">
     <hr>
     <div>
-      <p class="column">Membership is free.
-        <br>
-        Become a member of the Society by logging in on the <a href="https://www.sussexstudent.com/organisation/italian/">Students' Union website </a>
+      <p class="column" id="footer_logo"> <img src="ussu_logo_blue.gif" alt="Italian Society" height="40px">
       </p>
-      <form class="column" action="/mailing_list.php" method="post" target="_blank">
-        <fieldset>
-          Email: <input type="text" name="email" size="35" placeholder="Your email" value="" />
-          <input type="submit" name="submit" class="btn-sm btn-success" value="Join Our Mailing List"/>
-        </fieldset>
-      </form>
     </div>
   </div>
 
