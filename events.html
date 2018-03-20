@@ -13,7 +13,7 @@
     <header>
 
       <!--Navigation bar-->
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-default navbar-collapse">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
@@ -57,41 +57,90 @@
     <!--Events-->
     <section class="jumbotron container-fluid">
       <div class="row">
-        <div class="col-sm-6" id="events_next">
+        <div class="col-md-6" id="events_next">
           <h2> Next Events </h2>
-          <div>
 
+          <div class="row">
+            <div class="col-sm-2 center-align-text" id="date">
+              <time datetime="2014-09-20" class="icon">
+                <em>Saturday</em>
+                <strong>September</strong>
+                <span>20</span>
+              </time>
+            </div>
+            <div class="col-sm-6 center-align-text" id="description"> Mediterranean Night </div>
+            <div class="col-sm-4 center-align-text" id="place"><a href="#">Al Duomo</a></div>
+          </div>
+
+          <div>
+            <div class="col-sm-2 center-align-text" id="date">
+              <time datetime="2014-09-20" class="icon">
+                <em>Saturday</em>
+                <strong>September</strong>
+                <span>20</span>
+              </time>
+            </div>
+            <div class="center-align-text col-sm-6" id="description"> Easter Party </div>
+            <div class="center-align-text col-sm-4" id="place"></div>
           </div>
         </div>
 
-        <div class="col-sm-6" id="events_past">
+        <div class="col-md-6" id="events_past">
           <h2> Past Events </h2>
-          <div class="row">
-            <div class="col-sm-4 center-align-text" id="date"> 26/03 </div>
-            <div class="col-sm-4 center-align-text" id="description"> Mediterranean Night </div>
-            <div class="col-sm-4 center-align-text" id="place"><img src="dance.png">Al Duomo</div>
-          </div>
           <div>
-            <div class="col-sm-3 center-align-text" id="date"> 4/04 </div>
-            <div class="center-align-text col-sm-4" id="description"> Easter Party </div>
-            <div class="center-align-text col-sm-3" id="place"></div>
+            <div class="col-sm-2 center-align-text" id="date">
+              <time datetime="2014-09-20" class="icon">
+                <em>Saturday</em>
+                <strong id="strongpast">September</strong>
+                <span id="spanpast">20</span>
+              </time>
+            </div>
+            <div class="center-align-text col-sm-6" id="description">Italian &amp; French Cheese and Wine Tasting</div>
+            <div class="center-align-text col-sm-4" id="place"><a href="#">Meeting Room 3</a></div>
           </div>
+
+          <div>
+            <div class="col-sm-2 center-align-text" id="date">
+              <time datetime="2014-09-20" class="icon">
+                <em>Saturday</em>
+                <strong id="strongpast">September</strong>
+                <span id="spanpast">20</span>
+              </time>
+            </div>
+            <div class="center-align-text col-sm-6" id="description">Italian &amp; French Cheese and Wine Tasting</div>
+            <div class="center-align-text col-sm-4" id="place"><a href="#">Meeting Room 3</a></div>
+          </div>
+
+          <div>
+            <div class="col-sm-2 center-align-text" id="date">
+              <time datetime="2014-09-20" class="icon">
+                <em>Saturday</em>
+                <strong id="strongpast">September</strong>
+                <span id="spanpast">20</span>
+              </time>
+            </div>
+            <div class="center-align-text col-sm-6" id="description">Italian &amp; French Cheese and Wine Tasting</div>
+            <div class="center-align-text col-sm-4" id="place"><a href="#">Meeting Room 3</a></div>
+          </div>
+
         </div>
 
       </div>
       </section>
 
       <!--Maps-->
-      <section class="container">
-      <div class="jumbotron" id="maps">
-        <h3 class="col-xs-6" id="on-campus">On-campus</h3>
-        <h3 class="col-xs-6" id="off-campus">Off-campus</h3>
-      </div>
-      <div class="jumbotron" id="maps">
-        <div class="col-xs-6" id="mapon"></div>
-        <div class="col-xs-6" id="mapoff"></div>
-      </div>
-    </section class="container">
+      <section class="jumbotron container" id="maps">
+        <div class="row">
+          <div class="col-md-5">
+            <h4>On-campus</h4>
+            <div id="mapon"></div>
+          </div>
+          <div class="col-md-7">
+            <h4>Off-campus</h4>
+            <div id="mapoff"></div>
+          </div>
+        </div>
+      </section>
 
 
     <!--Scroll to top button-->
@@ -102,7 +151,7 @@
     <script src="main.js"></script>
     <script src="events.js"></script>
     <script   async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT4juyBsVpORzdkZtGeLc0kmeEG7zN5nQ&callback=initMap" type="text/javascript">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4fPJNIxLTUh3BYy7__eoSy9KdMfQY-e0&callback=initMap" type="text/javascript">
     </script>
 
   </body>
