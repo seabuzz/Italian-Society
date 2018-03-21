@@ -2,11 +2,17 @@ html,body{
   height:100%;
   text-align:center;
   background-color: #222;
+
 }
 
 h1{
   font-family: 'Permanent Marker', cursive;
 }
+
+h2{
+  font-family: 'Acme', sans-serif;
+}
+
 
 .navbar{
   font-family: 'Acme', sans-serif;
@@ -41,16 +47,18 @@ h1{
 
 .title{
   position: absolute;
-    top: 370px;
-    width: 96.67%;
-    color: white;
+  top: 370px;
+  color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  background-color: rgba(14, 6, 6, 0.45);
+  border-radius: 5%
 }
 
 #title{
-  font-size: 80px;
-}
-#ussu{
-  margin-top: 80px;
+  font-size: 100px;
+  text-shadow: 5px 10px royalblue;
 }
 
 .footer {
@@ -88,7 +96,7 @@ hr{
   margin-top: 5px;
 }
 
-  .fa-facebook {
+.fa-facebook {
   background: #3B5998;
   color: white;
  }
@@ -104,14 +112,82 @@ hr{
  color: white;
 }
 
-<!--Maps-->
-.mapon, .mapoff{
+/*Events*/
+
+#event-list{
+  margin: 5px auto;
+  padding: 10px;
+  width: 76vw;
+  list-style-type: none;
+  background-color: #fff;
 }
 
-.center-align-text{
-  float: none;
-  display: table-cell;
-  vertical-align: center;
+.event-list-item *{
+  margin:0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.event-list-item {
+  width: 100%;
+  float: left;
+  overflow: auto;
+  margin: 5px auto;
+  }
+
+.event-date {
+  width: 12%;
+  float: left;
+  margin: 10px 15px 0 0;
+}
+.event-info{
+  width: 58%;
+  padding: 0 5px;
+  float: left;
+}
+.event-title{
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+.event-where{
+  width: 24%;
+  float: right;
+  text-align: center;
+  padding: 3em 2em;
+  margin: 5px;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.event-where span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font: 22px "Permanent Marker";
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  text-align: center;
+}
+.event-where span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0.9;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.event-where:hover span {
+  padding-right: 25px;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.event-where:hover span:after {
+  opacity: 1;
+  right: 0;
+  font: 12px Helvetica #FFFFFF;
 }
 
 time.icon
@@ -119,13 +195,15 @@ time.icon
   font-size: 1em;
   display: block;
   position: relative;
-  width: 7em;
-  height: 7em;
+  width: 95%;
+  height: 8.5em;
   background-color: #fff;
-  border-radius: 0.6em;
-  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 0 0 1px #bdbdbd;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, /*0 3px 0 #bdbdbd, 0 4px 0 #fff,*/ 0 0 0 1px #bdbdbd;
   overflow: hidden;
+  margin: 0 auto;
 }
+
 time.icon *
 {
   display: block;
@@ -135,6 +213,7 @@ time.icon *
   font-style: normal;
   text-align: center;
 }
+
 time.icon strong
 {
   position: absolute;
@@ -150,7 +229,7 @@ time.icon strong
 time.icon em
 {
   position: absolute;
-  bottom: 0.3em;
+  margin-top: 5.5em;
   color: #df421a;
 }
 
@@ -161,18 +240,55 @@ time.icon span
   padding-top: 0.8em;
   color: #2f2f2f;
 }
+
 #spanpast{
   color: #726E6D;
 }
 
-#date,#description,#place{
-  text-align: left;
+time.icon p
+{
+  letter-spacing: -0.05em;
+  margin-top: 0.8em;
+  color: #2f2f2f;
 }
 
-#maps{
-
+#ppast{
+  color: #726E6D;
 }
 
+/*Images for venues*/
+#amicimiei{
+  background: url(imgvenues/amicimiei.jpg);
+}#chtis{
+  background: url(imgvenues/chtis.jpg);
+}
+#duomo{
+  background: url(imgvenues/al-duomo.jpg);
+}
+#coffee{
+  background: url(imgvenues/room76.jpg)
+}
+#tasting{
+  background: url(imgvenues/tasting.jpg);
+}
+#giulia{
+  background: url(imgvenues/giulia.jpg);
+}
+#nuposto{
+  background: url(imgvenues/nuposto.jpg);
+}
+#spritz{
+  background: url(imgvenues/spritz.jpg);
+}
+
+#vip{
+  background: url(imgvenues/vip.jpg);
+}
+#voting{
+  background: url(imgvenues/voting.jpg);
+}
+
+/*Maps*/
 #mapon {
  height: 450px;
  }
@@ -180,6 +296,7 @@ time.icon span
   height: 450px;
 }
 
+/*Topbutton*/
 #topBtn {
     display:none;
     position: fixed;
