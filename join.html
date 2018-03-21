@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 </head>
 
 <body>
@@ -21,7 +22,7 @@
 
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">HOME</a></li>
+          <li class="active"><a href="#">HOME</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -31,7 +32,7 @@
             </li>
           <li><a href="team.html">MEET THE TEAM</a></li>
           <li><a href="events.html">EVENTS</a></li>
-          <li><a href="#">CONTACT/JOIN</a></li>
+          <li><a href="join.html">CONTACT/JOIN</a></li>
         </ul>
 
       <!--Social buttons-->
@@ -53,22 +54,40 @@
 </div>
 
 
-
-<div class="contact">
 <div class="vl"></div>
+<div class="contact">
+
 
   <ul>
 
-  <li><a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a></li>
-  <li><a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a></li>
-  <li><a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a></li>
+  <li> <div class="text">Like us on Facebook to be updated about our events</div>
+    <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a></li>
+  <li><div class="text">Follow us on Instagram to have a look at our pics</div><a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a></li>
+  <li><div class="text">Find us on Twitter to hear the latest news and updates.</div><a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a></li>
+  <li><div class="text">Subscribe to the newsletter to be always updated</div>
+    <div id="chat">
+
+    <div class="fa fa-envelope-o" style="font-size:38px"></i></li>
+
+<div id="chatBody">
+
+<div id="chatFooter">
+<input id="chatText" type="text" />
+  <input type="button" id="send" value=">" />
+</div>
+</div>
+<div>
   <div>
-      
-        <fieldset>
-        Email: <input type="text" name="email" size="35" placeholder="Your email" value="" />
-        <input type="submit" name="submit" class="btn-sm btn-success" value="Join Our Mailing List"/>
-        </fieldset>
-      </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$(".fa-envelope-o").click(function(){
+    	$("#chatBody").slideToggle('fast', 'swing');
+    });
+});
+</script>
+
 
   </div>
 </div>
