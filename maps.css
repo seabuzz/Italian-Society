@@ -1,0 +1,22 @@
+#iw-container {
+   margin:0px;
+   padding: 0px;
+   background-color: #48b5e9;
+   color: white;
+   border-radius: 2px 2px 0 0;
+}
+
+.gm-style-iw {
+   max-width: 350px !important;
+   top: 5px;
+   left: 0;
+   background-color: #fff;
+   border: 1px solid rgba(72, 181, 233, 0.6);
+   border-radius: 2px 2px 0 0;
+}
+
+#infowindow-text{
+  font-size:16px;
+  display: block;
+  margin: 8px auto;
+}

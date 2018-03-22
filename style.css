@@ -13,6 +13,9 @@ h2{
   font-family: 'Acme', sans-serif;
 }
 
+h3{
+
+}
 
 .navbar{
   font-family: 'Acme', sans-serif;
@@ -117,7 +120,7 @@ hr{
 #event-list{
   margin: 5px auto;
   padding: 10px;
-  width: 76vw;
+  width: 74vw;
   list-style-type: none;
   background-color: #fff;
 }
@@ -226,6 +229,7 @@ time.icon strong
 #strongpast{
   background-color: #726E6D;
 }
+
 time.icon em
 {
   position: absolute;
@@ -240,7 +244,6 @@ time.icon span
   padding-top: 0.8em;
   color: #2f2f2f;
 }
-
 #spanpast{
   color: #726E6D;
 }
@@ -251,7 +254,6 @@ time.icon p
   margin-top: 0.8em;
   color: #2f2f2f;
 }
-
 #ppast{
   color: #726E6D;
 }
@@ -259,7 +261,8 @@ time.icon p
 /*Images for venues*/
 #amicimiei{
   background: url(imgvenues/amicimiei.jpg);
-}#chtis{
+}
+#chtis{
   background: url(imgvenues/chtis.jpg);
 }
 #duomo{
@@ -280,7 +283,6 @@ time.icon p
 #spritz{
   background: url(imgvenues/spritz.jpg);
 }
-
 #vip{
   background: url(imgvenues/vip.jpg);
 }
@@ -289,11 +291,16 @@ time.icon p
 }
 
 /*Maps*/
-#mapon {
+#maps{
+  width: 94vw;
+  margin-top: 40px;
+}
+#maps *{
+  margin: 0px;
+}
+#mapon, #mapoff {
  height: 450px;
- }
-#mapoff {
-  height: 450px;
+ margin-top: 20px;
 }
 
 /*Topbutton*/
@@ -306,6 +313,7 @@ time.icon p
     border: none;
     outline: none;
     background-color: #F75D59;
+    opacity: 0.9;
     color: white;
     padding: 8px;
     border-radius: 20%;
@@ -316,10 +324,3 @@ time.icon p
     background-color:white;
     color: #F75D59;
 }
-
-/*
-#flag:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-*/
