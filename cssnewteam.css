@@ -1,0 +1,226 @@
+html,body {
+  height:100%;
+  text-align:center;
+  background-color: #E6E9FF;
+}
+
+/*team image*/
+
+figure {
+   margin-top: 20px;
+   margin-left: 5%;
+   width: 50%; /*container-width*/
+   height: 50%;
+    /*hide bounds of image */
+   float: left;
+   padding: 10px;
+   text-align: center;
+}
+
+figure img {
+  display:block; /*remove inline-block spaces*/
+   /*add to other styles*/
+  width:100%;
+  padding: 0;
+}
+
+/*Profile cards*/
+
+.table {
+  margin-top: 20px;
+  display: grid;
+  margin-left: 5%;
+  padding: 0;
+  grid-template-columns: minmax(40vw, 1fr);
+  grid-template-rows: minmax(40vh, 1fr);
+
+}
+
+.circular {
+  float: center;
+  width: 130px;
+  height: 130px;
+  margin: 1em auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-orientation: 10;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 50%;
+	}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+.column {
+  margin-top: 20px;
+  flex: 40%;
+  max-width: 33%;
+  padding: 0px 0px 0px 40px;
+}
+
+.row {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  position: relative;
+  margin-right: 5%;
+
+}
+
+/*titles*/
+
+h1 {
+  color: black;
+  font-size: 35px;
+  margin: 0px 80% 0px 0px;
+}
+
+figcaption, p {
+  margin: 0px;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 15%;
+  margin-top: -10%;
+}
+p {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+/* uvisited link */
+
+a p {
+  font-size: 30px;
+  margin: 0;
+  margin-top: 5%;
+
+}
+
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: grey;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+
+
+}
+
+/*overaly*/
+/*dfn */
+/*dfn */
+
+dfn {
+  background: rgba(0,0,0,0.2);
+  border-bottom: dashed 1px rgba(0,0,0,0.8);
+  padding: 0 0.4em;
+  cursor: default;
+  font-style: normal;
+  position: relative;
+
+}
+dfn::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0,0,0,0);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+}
+dfn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0;
+  width: 0; height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0,0,0,0.8);
+  transition: opacity 250ms, top 250ms;
+}
+dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+dfn:hover::after,
+dfn:hover::before {opacity: 1;}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  height: 130px;
+  width: 130px;
+  opacity: 0;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.text {
+  font-style: bold;
+  line-height: 12px;
+  color: white;
+  font-size: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: -30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center ;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  height: 8px;
+  color: #ECE4E2;
+  font-size: 12px;
+}
+
+.logo{
+  margin: -20px;
+  color: white;
+  width: 200px;
+  text-align: center;
+}
