@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 <head>
   <title> Italian Society - University of Sussex</title>
@@ -13,106 +13,128 @@
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
-<body class="center black">
+<body>
+  <header>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-collapse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Italian Society</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mainnavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">HOME</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html">HISTORY</a></li>
+              <li><a href="about.html">MISSION</a></li>
+            </ul>
+          </li>
+          <li><a href="team.html">MEET THE TEAM</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="join.html">CONTACT/JOIN</a></li>
+        </ul>
 
-  <!--Sidebar on large screens-->
-  <div id="sidebar-wrapper">
-    <div class="container-fluid hide-small hide-medium" id="mainMenu-container">
 
-      <div class="row">
-        <div class="col-md-2">
+      <!--Social buttons-->
+      <ul class="navbar navbar-nav navbar-right">
+          <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a>
+          <a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
+          <a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
+      </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
 
-          <!-- menu -->
-          <div id="MainMenu">
-            <div class="list-group panel black large">
-              <a class="list-group-item sidebar-brand white" data-parent="#MainMenu">
-                <div><img src="logo.png">
+  <!--Slideshow-->
+  <div class="container fill">
+    <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
+
+          <!--Carousel items-->
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <div class="fill" style="background-image: url('med.jpg');">
+                <div class="container">
                 </div>
-              </a>
-              <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu"><i class="glyphicon glyphicon-home xlarge"></i></a>
-              <a href="#about" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">ABOUT</a>
-              <div class="collapse" id="about">
-                <a href="javascript:;" class="list-group-item">HISTORY</a>
-                <a href="javascript:;" class="list-group-item">MISSION</a>
               </div>
-              <a href="events.html" class="list-group-item list-group-item-success" data-parent="#MainMenu">EVENTS</a>
-
-              <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">COMMITTEE</a>
-              <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">CONTACT</a>
             </div>
+
+            <div class="item">
+              <div class="fill" style="background-image:url('pizza.jpg');">
+                <div class="container">
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="fill" style="background-image: url('nuposto_yuki.jpg');">
+                <div class="container">
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="fill" style="background-image:url('med1.jpg');">
+                <div class="container">
+                </div>
+              </div>
+            </div>
+
+            <div class="item active">
+              <div class="fill" style="background-image: url('pandoro.jpg');">
+                <div class="container">
+                </div>
+              </div>
+            </div>
+
+            <div class="item active">
+              <div class="fill" style="background-image: url('nuposto3.jpg');">
+                <div class="container">
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
 
-    </div>
-    <div id="social_index">
-      <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a>
-      <a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
-      <a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
-    </div>
-  </div>
-
-  <!-- Navbar on small and medium screens (Hidden on large screens) -->
-  <div class="top hide-large" id="myNavbar">
-    <div class="bar opacity hover-opacity-off center small">
-      <a href="home.html" class="bar-item button" style="width:25% !important">HOME</a>
-      <a href="about.html" class="bar-item button" style="width:25% !important">ABOUT</a>
-      <a href="events.html" class="bar-item button" style="width:25% !important">EVENTS</a>
-      <a href="contact.html" class="bar-item button" style="width:25% !important">CONTACT</a>
-    </div>
-  </div>
-
-  <div id="page-content-wrapper">
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-      <!-- Indicators -->
-      <ol class="carousel-indicators hide-small hide-medium">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img_carousel/med.jpg" alt="Los Angeles">
+        <div class="title hidden-xs">
+          <h1 id="title">Italian society</h1>
+          <h3 id="subtitle">A place where every student can feel at home</h3>
         </div>
 
-        <div class="item">
-          <img src="img_carousel/nuposto_yuki.jpg" alt="Chicago">
-        </div>
 
-        <div class="item">
-          <img src="img_carousel/med1.jpg" alt="New York">
-        </div>
-
-        <div class="item">
-          <img src="img_carousel/nuposto3.jpg" alt="New York">
-        </div>
       </div>
     </div>
-
-    <header class="title hide-small">
-      <h1>Italian society</h1>
-      <h3>A place where every student can feel at home</h3>
-    </header>
-
-
   </div>
-</div>
 
+  <!--Footer-->
+  <div class="footer">
+    <hr>
+    <div>
+      <p class="column" id="footer_logo"> <img src="ussu_logo_blue.gif" alt="Italian Society" height="40px">
+      </p>
+      <h1 id="ussu">University of Sussex Students' Union</h1>
+    </div>
+  </div>
 
-<!-- jQuery and js -->
-<script src="jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="main.js"></script>
+      <!-- jQuery and js -->
+      <script src="jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="main.js"></script>
 
 </body>
 </html>
