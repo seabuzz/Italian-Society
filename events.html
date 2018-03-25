@@ -1,121 +1,127 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="smallscreen.css">
-    <link rel="stylesheet" type="text/css" href="maps.css">
-    <link href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="smallscreen.css" media="screen and (max-width:992px)">
+  <link rel="stylesheet" type="text/css" href="maps.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-  <body>
+<body>
+  <!--Sidebar on large screens-->
+  <div id="sidebar-wrapper">
+    <div class="container-fluid hide-small hide-medium" id="mainMenu-container">
 
-    <header>
+      <div class="row">
+        <div class="col-md-2">
 
-      <!--Navigation bar-->
-      <nav class="navbar navbar-default navbar-collapse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" >Italian Society</a>
+          <!-- menu -->
+          <div id="MainMenu">
+            <div class="list-group panel black large">
+              <a class="list-group-item sidebar-brand white" data-parent="#MainMenu">
+                <div><img src="logo.png">
+                </div>
+              </a>
+              <a href="index.html" class="list-group-item" data-parent="#MainMenu"><i class="glyphicon glyphicon-home xlarge"></i></a>
+              <a href="#about" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">ABOUT</a>
+              <div class="collapse" id="about">
+                <a href="javascript:;" class="list-group-item">HISTORY</a>
+                <a href="javascript:;" class="list-group-item">MISSION</a>
+                <a href="javascript:;" class="list-group-item">MEMBERSHIP</a>
+              </div>
+              <a href="events.html" class="list-group-item" data-parent="#MainMenu">EVENTS</a>
+              <a href="team.html" class="list-group-item" data-parent="#MainMenu">COMMITTEE</a>
+              <a href="#demo4" class="list-group-item" data-parent="#MainMenu">CONTACT</a>
+            </div>
           </div>
-          <div class="collapse navbar-collapse" id="mainnavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">HOME</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="about.html">HISTORY</a></li>
-                <li><a href="about.html">MISSION</a></li>
-              </ul>
-            </li>
-            <li><a href="team.html">MEET THE TEAM</a></li>
-            <li class="active"><a href="events.html">EVENTS</a></li>
-            <li><a href="join.html">CONTACT/JOIN</a></li>
-          </ul>
-
-        <!--Social buttons-->
-        <ul class="navbarnavbar-nav navbar-right">
-            <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook-square" target=”_blank”></a>
-            <a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
-            <a href="https://twitter.com/SussexItalians" class="fa fa-twitter-square" target=”_blank”></a>
-        </ul>
         </div>
       </div>
-      </nav>
 
-    </header>
+    </div>
+    <div id="social_index">
+      <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a>
+      <a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
+      <a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
+    </div>
+  </div>
 
-    <!--Subheader-->
+  <!-- Navbar on small and medium screens (Hidden on large screens) -->
+  <div class="top hide-large" id="myNavbar">
+    <div class="bar opacity hover-opacity-off center small">
+      <a href="home.html" class="bar-item button" style="width:20% !important">HOME</a>
+      <a href="about.html" class="bar-item button" style="width:20% !important">ABOUT</a>
+      <a href="events.html" class="bar-item button" style="width:20% !important">EVENTS</a>
+      <a href="team.html" class="bar-item button" style="width:20% !important">COMMITTEE</a>
+      <a href="contact.html" class="bar-item button" style="width:20% !important">CONTACT</a>
+    </div>
+  </div>
 
+  <!--Events-->
+  <section id="page-content-wrapper">
+    <section class="wrapper">
 
-    <!--Events-->
-  <section class="wrapper">
-    <ul id="event-list">
-      <li><h2>Next Events</h2></li>
+      <!--List of events-->
+      <ul id="event-list">
+        <li><h2>Next Events</h2></li>
 
-      <li class="event-list-item">
-        <div class="event-date">
-          <time datetime="2014-09-20" class="icon">
-            <em>Thursday</em>
-            <strong>September</strong>
-            <span>20</span>
-            <p>9:30 PM</p>
-          </time>
-        </div>
-        <div class="event-info">
-          <div class="event-title">Mediterranean Night</div>
-          <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
+        <li class="event-list-item">
+          <div class="event-date">
+            <time datetime="2014-09-20" class="icon">
+              <em>Thursday</em>
+              <strong>September</strong>
+              <span>20</span>
+              <p>9:30 PM</p>
+            </time>
           </div>
-        </div>
-        <button type="button" class="event-where btn-block duomo" id="med"><span>Find<br>the venue</span></button>
-      </li>
-
-      <li class="event-list-item">
-        <div class="event-date">
-          <time datetime="2018-04-18" class="icon">
-            <em>Wednesday</em>
-            <strong>April</strong>
-            <span>18</span>
-            <p>6:30 PM</p>
-          </time>
-        </div>
-        <div class="event-info">
-          <div class="event-title">FILM SCREENING</div>
-          <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
+          <div class="event-info">
+            <div class="event-title">Mediterranean Night</div>
+            <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
+            </div>
           </div>
-        </div>
-        <button type="button" class="event-where btn-block duomo" id="duomo"><span>Find<br>the venue</span></button>
-      </li>
+          <button type="button" class="event-where btn-block duomo" id="med"><span>Find<br>the venue</span></button>
+        </li>
 
-      <li class="event-list-item">
-        <div class="event-date">
-          <time datetime="2014-09-20" class="icon">
-            <em>Saturday</em>
-            <strong>September</strong>
-            <span>20</span>
-            <p>9:30 PM</p>
-          </time>
-        </div>
-        <div class="event-info">
-          <div class="event-title">Mediterranean Night</div>
-          <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
+        <li class="event-list-item">
+          <div class="event-date">
+            <time datetime="2018-04-18" class="icon">
+              <em>Wednesday</em>
+              <strong>April</strong>
+              <span>18</span>
+              <p>6:30 PM</p>
+            </time>
           </div>
-        </div>
-        <button type="button" class="event-where btn-block duomo" id="duomo"><span>Find<br>the venue</span></button>
-      </li>
+          <div class="event-info">
+            <div class="event-title">FILM SCREENING</div>
+            <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
+            </div>
+          </div>
+          <button type="button" class="event-where btn-block duomo" id="duomo"><span>Find<br>the venue</span></button>
+        </li>
 
-      <li><h2>Past Events</h2></li>
+        <li class="event-list-item">
+          <div class="event-date">
+            <time datetime="2014-09-20" class="icon">
+              <em>Saturday</em>
+              <strong>September</strong>
+              <span>20</span>
+              <p>9:30 PM</p>
+            </time>
+          </div>
+          <div class="event-info">
+            <div class="event-title">Mediterranean Night</div>
+            <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
+            </div>
+          </div>
+          <button type="button" class="event-where btn-block duomo" id="duomo"><span>Find<br>the venue</span></button>
+        </li>
 
-      <li class="event-list-item">
+        <li><h2>Past Events</h2></li>
+
+        <li class="event-list-item">
           <div class="event-date">
             <time datetime="2018-03-20 21:30" class="icon">
               <em>Tuesday</em>
@@ -149,7 +155,7 @@
           <button type="button" class="event-where btn-block MeetingRoom3" id="tasting"><span>Find<br>the venue</span></button>
         </li>
 
-      <li class="event-list-item">
+        <li class="event-list-item">
           <div class="event-date">
             <time datetime="2018-03-14" class="icon">
               <em>Wednesday</em>
@@ -235,71 +241,71 @@
         </li>
 
         <li class="event-list-item">
-            <div class="event-date">
-              <time datetime="2018-02-18" class="icon">
-                <em>Sunday</em>
-                <strong id="strongpast">February</strong>
-                <span id="spanpast">18</span>
-                <p id="ppast">9:30 PM</p>
-              </time>
+          <div class="event-date">
+            <time datetime="2018-02-18" class="icon">
+              <em>Sunday</em>
+              <strong id="strongpast">February</strong>
+              <span id="spanpast">18</span>
+              <p id="ppast">9:30 PM</p>
+            </time>
+          </div>
+          <div class="event-info">
+            <div class="event-title">MEET N' PIZZA</div>
+            <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
             </div>
-            <div class="event-info">
-              <div class="event-title">MEET N' PIZZA</div>
-              <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
-              </div>
-            </div>
-            <button type="button" class="event-where btn-block nuposto" id="nuposto"><span>Find<br>the venue</span></button>
-          </li>
+          </div>
+          <button type="button" class="event-where btn-block nuposto" id="nuposto"><span>Find<br>the venue</span></button>
+        </li>
 
-          <li class="event-list-item">
-              <div class="event-date">
-                <time datetime="2018-02-14" class="icon">
-                  <em>Wednesday</em>
-                  <strong id="strongpast">February</strong>
-                  <span id="spanpast">14</span>
-                  <p id="ppast">9:30 PM</p>
-                </time>
-              </div>
-              <div class="event-info">
-                <div class="event-title">FILM SCREENING: Giulia doesn't date at night</div>
-                <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
-                </div>
-              </div>
-              <button type="button" class="event-where btn-block artsa2" id="giulia"><span>Find<br>the venue</span></button>
-            </li>
+        <li class="event-list-item">
+          <div class="event-date">
+            <time datetime="2018-02-14" class="icon">
+              <em>Wednesday</em>
+              <strong id="strongpast">February</strong>
+              <span id="spanpast">14</span>
+              <p id="ppast">9:30 PM</p>
+            </time>
+          </div>
+          <div class="event-info">
+            <div class="event-title">FILM SCREENING: Giulia doesn't date at night</div>
+            <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
+            </div>
+          </div>
+          <button type="button" class="event-where btn-block artsa2" id="giulia"><span>Find<br>the venue</span></button>
+        </li>
 
-          <li class="event-list-item">
-            <div class="event-date">
-              <time datetime="2018-02-09" class="icon">
-                <em>Friday</em>
-                <strong id="strongpast">February</strong>
-                <span id="spanpast">9</span>
-                <p id="ppast">9:30 PM</p>
-              </time>
+        <li class="event-list-item">
+          <div class="event-date">
+            <time datetime="2018-02-09" class="icon">
+              <em>Friday</em>
+              <strong id="strongpast">February</strong>
+              <span id="spanpast">9</span>
+              <p id="ppast">9:30 PM</p>
+            </time>
+          </div>
+          <div class="event-info">
+            <div class="event-title">STOP N' SPRITZ</div>
+            <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
             </div>
-            <div class="event-info">
-              <div class="event-title">STOP N' SPRITZ</div>
-              <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
-              </div>
+          </div>
+          <button type="button" class="event-where btn-block room76" id="spritz"><span>Find<br>the venue</span></button>
+        </li>
+        <li class="event-list-item">
+          <div class="event-date">
+            <time datetime="2018-01-21" class="icon">
+              <em>Sunday</em>
+              <strong id="strongpast">January</strong>
+              <span id="spanpast">21</span>
+              <p id="ppast">2:30 PM</p>
+            </time>
+          </div>
+          <div class="event-info">
+            <div class="event-title">Get Voting</div>
+            <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
             </div>
-            <button type="button" class="event-where btn-block room76" id="spritz"><span>Find<br>the venue</span></button>
-          </li>
-          <li class="event-list-item">
-            <div class="event-date">
-              <time datetime="2018-01-21" class="icon">
-                <em>Sunday</em>
-                <strong id="strongpast">January</strong>
-                <span id="spanpast">21</span>
-                <p id="ppast">2:30 PM</p>
-              </time>
-            </div>
-            <div class="event-info">
-              <div class="event-title">Get Voting</div>
-              <div class="event-description"> come to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcomcome to the med night come to the med nightcome to the med nightcom
-              </div>
-            </div>
-            <button type="button" class="event-where btn-block library" id="voting"><span>Find<br>the venue</span></button>
-          </li>
+          </div>
+          <button type="button" class="event-where btn-block library" id="voting"><span>Find<br>the venue</span></button>
+        </li>
 
         <li class="event-list-item">
           <div class="event-date">
@@ -320,38 +326,36 @@
 
         <li><div><h3>Looking for something different?</h3>
           <h3>We want to hear your ideas.
-          Send them through using the contact form</h3></div>
-        </li>
-    </ul>
-  </section>
-
-
+            Send them through using the contact form</h3></div>
+          </li>
+        </ul>
+      </section>
 
       <!--Maps-->
-  <section class="jumbotron container" id="maps">
-    <div class="row">
-      <div class="col-md-5">
-        <h2>On-campus</h2>
-        <div id="mapon"></div>
-      </div>
-      <div class="col-md-7">
-        <h2>Off-campus</h2>
-        <div id="mapoff"></div>
-      </div>
-    </div>
+      <section class="jumbotron container" id="maps">
+        <div class="row">
+          <div class="col-md-5">
+            <h2>On-campus</h2>
+            <div id="mapon"></div>
+          </div>
+          <div class="col-md-7">
+            <h2>Off-campus</h2>
+            <div id="mapoff"></div>
+          </div>
+        </div>
+      </section>
+    </section>
   </section>
+  <!--Scroll to top button-->
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
 
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+  <script src="maps.js"></script>
+  <script   async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4fPJNIxLTUh3BYy7__eoSy9KdMfQY-e0&callback=initMap" type="text/javascript">
+  </script>
 
-    <!--Scroll to top button-->
-    <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
-
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
-    <script src="maps.js"></script>
-    <script   async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4fPJNIxLTUh3BYy7__eoSy9KdMfQY-e0&callback=initMap" type="text/javascript">
-    </script>
-
-  </body>
+</body>
 </html>

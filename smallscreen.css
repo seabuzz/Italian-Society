@@ -1,44 +1,42 @@
-	body {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-/*Events*/
+body {
+	padding-left: 0;
+	padding-right: 0;
+}
 
 #event-list{
-  margin: 5px auto;
-  padding: 10px;
-  width: 86vw;
-  list-style-type: none;
-  background-color: #fff;
+	width:100%;
+}
+
+
+
+/*Events*/
+@media (max-width:600px){
+
+#event-list{
 }
 
 .event-list-item {
-  width: 100%;
-  float: left;
-  overflow: auto;
   margin: 5px auto;
-  }
+}
 
 .event-date {
-  width: 20%;
-  float: left;
-  margin: 40px 15px 0 0;
-}
-.event-info{
-  width: 70%;
-  padding: 5px;
-  float: left;
+  width: 22%;
+  margin: 20px 15px 0 0;
 }
 .event-title{
   font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
   margin-top: 10px;
 }
+.event-info{
+  width: 72%;
+  padding: 5px;
+  float: left;
+}
 .event-where{
-  width: 48%;
-  text-align: center;
+  width: 60%;
+	max-width: 240px;
   padding: 3em 2em;
-  margin-right: 16%;
+	margin-right: 19%;
   margin-bottom: 2vw;
   border-radius: 4px;
   transition: all 0.5s;
@@ -57,8 +55,4 @@
  margin-top: 20px;
  margin-bottom: 30px;
 }
-
-/*Topbutton*/
-#topBtn {
-    right: 2vw;
 }
