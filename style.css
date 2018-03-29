@@ -14,7 +14,7 @@ html,body{
 .xlarge{font-size:24px!important}.xxlarge{font-size:36px!important}.xxxlarge{font-size:48px!important}.jumbo{font-size:64px!important}
 
 .left-align{text-align:left!important}.right-align{text-align:right!important}.justify{text-align:justify!important}.center{text-align:center!important}
-@media (max-width:600px){.hide-small{display:none!important}}
+@media (max-width:560px){.hide-small{display:none!important}}
 @media (min-width:993px){.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
 @media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
 
@@ -178,10 +178,7 @@ h3{
 }
 
 /* Carousel */
-.carousel,.item,.active{
-  height:100%;
-}
-.carousel-inner{
+.carousel,.item,.active, .carousel-inner{
   height:100%;
 }
 
@@ -190,32 +187,14 @@ h3{
   bottom: 9vh;
   width: 100%;
 }
-@media(max-width:800){
-  .title{bottom:60vh;}
+@media(max-width:800px){
+  .title{bottom:24vh;}
 }
 @media(max-height:360px){
   .title{display:none!important}
 }
 
 /*
-.footer {
-position:absolute;
-bottom:0;
-left: 0;
-width: 100%;
-padding: 20px;
-height: 16px;
-color: #ECE4E2;
-font-family: "Acme"
-font-size: 12px;
-margin-bottom: -5%;
-}
-
-#footer_logo{
-margin-left: 50px;
-float: left;
-}
-
 hr{
 max-width: 100%
 }
@@ -259,7 +238,7 @@ max-width: 100%
 }
 .event-where{
   width: 25%;
-  max-width: 220px;
+  max-width: 280px;
   float: right;
   text-align: center;
   padding: 3em 2em;
