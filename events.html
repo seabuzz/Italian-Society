@@ -5,13 +5,14 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="smallscreen.css" media="screen and (max-width:992px)">
   <link rel="stylesheet" type="text/css" href="maps.css">
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Nunito" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+
   <!--Sidebar on large screens-->
   <div id="sidebar-wrapper">
     <div class="container-fluid hide-small hide-medium" id="mainMenu-container">
@@ -29,11 +30,15 @@
               <a href="index.html" class="list-group-item" data-parent="#MainMenu"><i class="glyphicon glyphicon-home xlarge"></i></a>
               <a href="#about" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">ABOUT</a>
               <div class="collapse" id="about">
-                <a href="about.html#mission" class="list-group-item medium">MISSION</a>
-                <a href="about.html#history" class="list-group-item medium">HISTORY</a>
-                <a href="about.html#membership" class="list-group-item medium">MEMBERSHIP</a>
+                <a href="about.html#mission" class="list-group-item medium">Our mission</a>
+                <a href="about.html#history" class="list-group-item medium">Our history</a>
+                <a href="about.html#membership" class="list-group-item medium">Membership</a>
               </div>
-              <a href="events.html" class="list-group-item" data-parent="#MainMenu">EVENTS</a>
+              <a href="#events" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">EVENTS</a>
+              <div class="collapse" id="events">
+                <a href="events.html" class="list-group-item medium">Our events</a>
+                <a href="events.html#maps" class="list-group-item medium">Find the venue</a>
+              </div>
               <a href="team.html" class="list-group-item" data-parent="#MainMenu">COMMITTEE</a>
               <a href="contact.html" class="list-group-item" data-parent="#MainMenu">CONTACT</a>
             </div>
@@ -49,7 +54,7 @@
     </div>
   </div>
 
-  <!-- Navbar on medium screens (Hidden on large screens) -->
+  <!-- Navbar on small and medium screens (Hidden on large screens) -->
   <div class="top hide-large" id="myNavbar">
     <div class="bar opacity hover-opacity-off center small">
       <a href="index.html" class="bar-item button" style="width:20% !important">HOME</a>
@@ -339,7 +344,7 @@
 
       <article class="event-list">Looking for something different?
       </br>
-      We want to hear your ideas. Send them through using the contact form</article>
+      We want to hear your ideas. Send them through using the <a href="contact.html">contact form</a></article>
 
     </section>
 

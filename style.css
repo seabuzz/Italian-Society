@@ -27,7 +27,7 @@ html,body{
 h1{
   padding: 0;
   margin: 0;
-  font: 70px "Acme";
+  font: 70px Helvetica;
 }
 
 h2{
@@ -35,11 +35,16 @@ h2{
   margin: 20px auto;
   display: inline-block;
   width: 100%;
+  font-family: "Nunito", sans-serif;
 }
 
 h3{
   padding: 0.1em;
   margin: 0.1em;
+}
+
+p{
+
 }
 
 /*Sidebar*/
@@ -53,12 +58,12 @@ h3{
   background-color: white;
   text-align: center;
 }
-@media(max-width:992px) {
-  #sidebar-wrapper{display:none}
-}
 
 #mainMenu-container{
   height: 86%;
+}
+@media(max-width:992px) {
+  #sidebar-wrapper{display:none}
 }
 
 #MainMenu{
@@ -71,9 +76,18 @@ h3{
   list-style: none;
 }
 
+#MainMenu *{
+  border: none;
+  border-radius: 0%;
+}
+
 .list-group.panel{
   line-height: 46px;
-  border: none;
+  border:none;
+}
+
+.list-group.panel > #about, #events{
+  line-height: 20px;
 }
 
 .list-group.panel > .list-group-item {
@@ -112,21 +126,6 @@ h3{
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-instagram {
-  background: pink;
-  color: white;
 }
 
 #social_index *{
@@ -178,9 +177,9 @@ h3{
   padding: 0px;
   left: 200px;
   height:100%;
+  width: calc(100% - 200px);
   background-position:center;
   background-size:cover;
-  width: calc(100% - 200px);
 }
 @media(max-width:992px) {
   #page-content-wrapper{left: auto; height:94%; width:100%;}
@@ -193,8 +192,9 @@ h3{
 
 .title{
   position: absolute;
-  bottom: 9vh;
+  bottom: 10vh;
   width: 100%;
+  background-color: rgba(0,0,0,0.3);
 }
 @media(max-width:800px){
   .title{bottom:24vh;}
@@ -203,13 +203,14 @@ h3{
   .title{display:none!important}
 }
 
+
 /*ABOUT*/
 #container_about{
   width:90%;
 }
 
 #membership-info{
-  
+
 }
 
 /*EVENTS*/

@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <!--Sidebar on large screens-->
   <div id="sidebar-wrapper">
     <div class="container-fluid hide-small hide-medium" id="mainMenu-container">
@@ -25,14 +26,19 @@
                 <div><img src="logo.png">
                 </div>
               </a>
-              <a href="index.html" class="list-group-item" data-parent="#MainMenu"><i class="glyphicon glyphicon-home xlarge"></i></a>
+              <a href="#" class="list-group-item" data-parent="#MainMenu"><i class="glyphicon glyphicon-home xlarge"></i></a>
               <a href="#about" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">ABOUT</a>
               <div class="collapse" id="about">
-                <a href="javascript:scrollHistory();" class="list-group-item">HISTORY</a>
-                <a href="javascript:;" class="list-group-item">MISSION</a>
-                <a href="javascript:;" class="list-group-item">MEMBERSHIP</a>
+                <a href="about.html#mission" class="list-group-item medium">Our mission</a>
+                <a href="about.html#history" class="list-group-item medium">Our history</a>
+                <a href="about.html#membership" class="list-group-item medium">Membership</a>
               </div>
-              <a href="events.html" class="list-group-item" data-parent="#MainMenu">EVENTS</a>
+              <a href="#events" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">EVENTS</a>
+              <div class="collapse" id="events">
+                <a href="events.html" class="list-group-item medium">Our events</a>
+                <a href="events.html#maps" class="list-group-item medium">Find the venue</a>
+              </div>
+
               <a href="team.html" class="list-group-item" data-parent="#MainMenu">COMMITTEE</a>
               <a href="contact.html" class="list-group-item" data-parent="#MainMenu">CONTACT</a>
             </div>
@@ -48,7 +54,7 @@
     </div>
   </div>
 
-  <!-- Navbar on medium screens (Hidden on large screens) -->
+  <!-- Navbar on small and medium screens (Hidden on large screens) -->
   <div class="top hide-large" id="myNavbar">
     <div class="bar opacity hover-opacity-off center small">
       <a href="index.html" class="bar-item button" style="width:20% !important">HOME</a>
@@ -113,7 +119,7 @@
           <div class="large-padding justify">
             Everyone is welcome at our events.
             <br>
-            If you are a current Sussex student, we recommend you also purchase <b>free</b> membership for the Society
+            However, if you are a current Sussex student, we recommend you also purchase <b>free</b> membership for the Society
             <a href="https://www.sussexstudent.com/organisation/italian/" target="_blank">here</a> by logging in with your University of Sussex credentials.
             <br>
             <div class="right-align">
