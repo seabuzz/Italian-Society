@@ -1,3 +1,28 @@
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+
+$('.carousel').carousel({
+  interval: 5000,
+});
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topBtn").style.display = "block";
+    } else {
+        document.getElementById("topBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 // var infowindow = new google.maps.InfoWindow();
 
@@ -543,52 +568,52 @@ function initMap() {
 //functions to open and to set content to infowindows
 
 function artsa2_info() {
-  infowindow.setContent('<h2 id="infowindow-text">Arts A 002</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">Arts A 002</h4>');
   infowindow.open(mapon, marker_artsa2);
   };
 
 function clubhouse_info() {
-  infowindow.setContent('<h2 id="infowindow-text">The Clubhouse</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">The Clubhouse</h4>');
   infowindow.open(mapon, marker_clubhouse);
   };
 
 function duomo_info() {
-  infowindow.setContent('<h2 id="infowindow-text">Al Duomo</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">Al Duomo</h4>');
   infowindow.open(mapoff, marker_duomo);
   };
 
 function eastslope_info() {
-  infowindow.setContent('<h2 id="infowindow-text">East Slope Bar</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">East Slope Bar</h4>');
   infowindow.open(mapon, marker_eastslope);
   };
 
 function falmerbar_info() {
-  infowindow.setContent('<h2 id="infowindow-text">Falmer Bar</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">Falmer Bar</h4>');
   infowindow.open(mapon, marker_falmer);
   };
 
 function library_info() {
-  infowindow.setContent('<h2 id="infowindow-text">US Library</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">US Library</h4>');
   infowindow.open(mapon, marker_library);
   };
 
 function MeetingRoom3_info() {
-  infowindow.setContent('<h2 id="infowindow-text">Meeting Room 3</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">Meeting Room 3</h4>');
   infowindow.open(mapon, marker_MeetingRoom3);
   };
 
 function nuposto_info() {
-  infowindow.setContent('<h2 id="infowindow-text">Nu Posto</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">Nu Posto</h4>');
   infowindow.open(mapoff, marker_nuposto);
   };
 
 function room76_info() {
-  infowindow.setContent('<h2 id="infowindow-text">Room 76</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">Room 76</h4>');
   infowindow.open(mapon, marker_room76);
 };
 
 function vip_info() {
-  infowindow.setContent('<h2 id="infowindow-text">VIP<br>Very Italian Pizza</h2>');
+  infowindow.setContent('<h4 id="infowindow-text">VIP<br>Very Italian Pizza</h4>');
   infowindow.open(mapoff, marker_vip);
   };
 
@@ -632,7 +657,7 @@ google.maps.event.addListener(mapoff, 'click', function() {
   $(".duomo").click(duomo_info);
   $(".eastslope").click(room76_info);
   $(".falmer").click(falmerbar_info);
-  $(".library").click(vip_info);
+  $(".library").click(library_info);
   $(".MeetingRoom3").click(MeetingRoom3_info);
   $(".nuposto").click(nuposto_info);
   $(".room76").click(room76_info);

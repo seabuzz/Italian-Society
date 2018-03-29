@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="smallscreen.css" media="screen and (max-width:992px)">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!--Sidebar on large screens-->
+  <div id="sidebar-wrapper">
+    <div class="container-fluid hide-small hide-medium" id="mainMenu-container">
+
+      <div class="row">
+        <div class="col-md-2">
+
+          <!-- menu -->
+          <div id="MainMenu">
+            <div class="list-group panel black large">
+              <a class="list-group-item sidebar-brand white" data-parent="#MainMenu">
+                <div><img src="logo.png">
+                </div>
+              </a>
+              <a href="index.html" class="list-group-item" data-parent="#MainMenu"><i class="glyphicon glyphicon-home xlarge"></i></a>
+              <a href="#about" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">ABOUT</a>
+              <div class="collapse" id="about">
+                <a href="javascript:scrollHistory();" class="list-group-item">HISTORY</a>
+                <a href="javascript:;" class="list-group-item">MISSION</a>
+                <a href="javascript:;" class="list-group-item">MEMBERSHIP</a>
+              </div>
+              <a href="events.html" class="list-group-item" data-parent="#MainMenu">EVENTS</a>
+              <a href="team.html" class="list-group-item" data-parent="#MainMenu">COMMITTEE</a>
+              <a href="contact.html" class="list-group-item" data-parent="#MainMenu">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="social_index">
+      <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a>
+      <a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
+      <a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
+    </div>
+  </div>
+
+  <!-- Navbar on medium screens (Hidden on large screens) -->
+  <div class="top hide-large" id="myNavbar">
+    <div class="bar opacity hover-opacity-off center small">
+      <a href="index.html" class="bar-item button" style="width:20% !important">HOME</a>
+      <a href="about.html" class="bar-item button" style="width:20% !important">ABOUT</a>
+      <a href="events.html" class="bar-item button" style="width:20% !important">EVENTS</a>
+      <a href="team.html" class="bar-item button" style="width:20% !important">TEAM</a>
+      <a href="contact.html" class="bar-item button" style="width:20% !important">CONTACT</a>
+    </div>
+  </div>
+
+  <!--Events-->
+  <section id="page-content-wrapper">
+
+    <section class="container-fluid" id="container_about">
+
+      <article id="history">
+
+        <h2>Our Mission</h2>
+
+        <span class="row">
+          <img src="committee_1617.jpg" class="col-sm-5 img-thumbnail img-responsive">
+          <div class="col-sm-7">
+            <div class="large-padding justify">
+              We organise film screenings, group dinners, Mediterranean Nights, cultural trips in Brighton
+              and to London, joint events with other societies at the University of Sussex, coffee mornings,
+              and talks and debates. Joining the Italian Society is a great way to socialise and meet new people,
+              discover the Italian culture and have a lot of fun!
+            </div>
+          </div>
+        </span>
+
+      </article>
+
+      <article class="container-fluid" id="mission">
+
+        <h2>Our History</h2>
+
+        <span class="row">
+          <img src="committee_1617.jpg" class="col-sm-5 img-thumbnail img-responsive">
+
+          <div class="col-sm-7">
+            <p class="large-padding justify">
+            In year 2017 we raised £400, which we sent to a charity organisation in central Italy to deal with the
+            difficult situation arising from the several earthquakes hitting Italy in 2016.
+          </p>
+        </div>
+
+        </span>
+
+
+      </p>
+    </article>
+
+
+    <article id="membership">
+
+      <h2>Membership</h2>
+
+      <span class="row">
+        <img src="committee_1617.jpg" class="col-sm-5 img-thumbnail img-responsive">
+        <div class="col-sm-7">
+          <div class="large-padding justify">
+            Everyone is welcome at our events.
+            <br>
+            If you are a current Sussex student, we recommend you also purchase <b>free</b> membership for the Society
+            <a href="https://www.sussexstudent.com/organisation/italian/" target="_blank">here</a> by logging in with your University of Sussex credentials.
+            <br>
+            <div class="right-align">
+              <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#membership-info">Need help?</button>
+              <div class="collapse text-blue-gray" id="membership-info">
+                Open the following link: <a href="https://www.sussexstudent.com/organisation/italian/" target="_blank">https://www.sussexstudent.com/organisation/italian/</a>.
+                <br>
+                Click on "Add to basket"
+                <br>
+                Click on "Log in" in the top-right corner
+                <br>
+                Log in with your University credentials.
+                <br>
+                If you are experiencing any problems with the log-in, contact the Students' Union.
+                <br>
+                Click on "Basket" in the top-right corner
+                <br>
+                Click on "Proceed to checkout"
+                <br>
+                Confirm
+              </div>
+            </div>
+          </div>
+
+          <div class="large-padding justify">
+            Purchasing the free membership benefits you indirectly.
+            The Committee uses membership numbers to demonstrate to the Students' Union the number of students
+            who benefit from our society.
+            <br>
+            This helps us to to receive funding and rewards throughout the year
+            which will be spent on more amazing events organised just for you.
+          </div>
+        </div>
+      </span>
+    </article>
+
+  </section>
+
+</section>
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
