@@ -1,5 +1,4 @@
 #page-content-wrapper{
-  background-color: #f1f1ee;
   text-align: left;
 }
 
@@ -20,7 +19,6 @@
 }
 p {
   margin-top: 1vh;
-  font-family: "Nunito", sans-serif;
 }
 .pic {
   width: 30%;
