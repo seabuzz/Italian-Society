@@ -1,0 +1,142 @@
+#page-content-wrapper{
+  background-color: #f1f1ee;
+  text-align: left;
+}
+
+#section-contact {
+  margin-bottom:0;
+  margin-left: 9%;
+}
+#section-contact *{
+  box-sizing: border-box;
+}
+#title-contact{
+  margin-top: 4vh;
+}
+#form-contact {
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-top: 2vh;
+}
+p {
+  margin-top: 1vh;
+  font-family: "Nunito", sans-serif;
+}
+.pic {
+  width: 30%;
+  length: auto;
+  float: right;
+  margin-right: 10%;
+  margin-left: 5%;
+  margin-top: -32%;
+  position: relative;
+  border-radius: 5%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/*responsive form*/
+  input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+  }
+
+  input[type=submit] {
+      background-color: #6F9FD9 ;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 500px;
+      margin-top: 0px;
+      float: left;
+  }
+
+  input[type=submit]:hover {
+      background-color:#6F9FF8;
+  }
+
+  .col-75 {
+      float: left;
+      width: 500px;
+      margin-bottom:0;
+      margin-top: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1000px) {
+      .col-25, .col-75, input[type=submit] {
+          width: 50%;
+          margin-top: 0;
+      }
+  }
+
+/*social buttons*/
+.social {
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  margin-top: 2%
+}
+.fab {
+  padding: 10px 15px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook-f {
+  padding: 10px 20px;
+  border: 2px solid #3B5998;
+  color: #3B5998;
+  margin: 20px;
+}
+
+.fa-twitter {
+  border: 2px solid #55ACEE;
+  color: #55ACEE;
+  margin: 20px;
+}
+
+.fa-instagram {
+  border: 2px solid #e1306c;
+  color: #e1306c;
+  margin: 20px;
+}
+
+.fab:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.fa-instagram:hover {
+  color: rgba(202,43,97);
+  border: 2px solid rgba(202,43,97);
+  background-color: #F4D4DF;
+}
+
+.fa-facebook-f:hover {
+  color: #2F4779;
+  border: 2px solid #2F4779;
+  background-color: #D7DDEA;
+}
+
+.fa-twitter:hover {
+  color: #4489BE;
+  border: 2px solid #4489BE;
+  background-color: #EEF6FD;
+}

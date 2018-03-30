@@ -27,7 +27,7 @@ html,body{
 h1{
   padding: 0;
   margin: 0;
-  font: 70px Helvetica;
+  font: 70px "Cabin", sans-serif;
 }
 
 h2{
@@ -118,22 +118,17 @@ p{
   height: 14%;
 }
 
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
 #social_index *{
   background: transparent;
   font-size: 30px;
   text-decoration: none;
   color:gray;
   margin: 0, auto;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
 }
 
 #social_index *:hover{
@@ -143,9 +138,6 @@ p{
 }
 
 /*Navbar*/
-#height {
-  height:6%;
-}
 #myNavbar *{
   text-decoration: none;
   color:white;
@@ -171,7 +163,6 @@ p{
 .bar .button{white-space:normal}
 
 /*Other elements common to all pages*/
-
 #page-content-wrapper {
   position:relative;
   padding: 0px;
@@ -203,224 +194,15 @@ p{
   .title{display:none!important}
 }
 
+.material-icons.home{
+  margin-top: 12px;
+  padding: 2px;
+}
+
 
 /*ABOUT*/
 #container_about{
   width:90%;
-}
-
-#membership-info{
-
-}
-
-/*EVENTS*/
-.event-list{
-  margin: 5px auto;
-  padding: 10px;
-  width: 90%;
-  list-style-type: none;
-}
-
-.event-list-item *{
-  margin:0px;
-  padding: 0px;
-  text-align: left;
-}
-
-.event-list-item {
-  width: 100%;
-  float: left;
-  overflow: auto;
-  margin: 20px auto;
-}
-
-.event-date {
-  width: 18%;
-  max-width: 130px;
-  float: left;
-  margin: 10px 15px 0 0;
-}
-.event-info{
-  width: 52%;
-  padding: 0 5px;
-  float: left;
-}
-.event-title{
-  font: bold 20px Helvetica, Verdana, sans-serif;
-}
-.event-where{
-  width: 25%;
-  max-width: 280px;
-  float: right;
-  text-align: center;
-  padding: 3em 2em;
-  margin: 5px;
-  border-radius: 4px;
-  transition: all 0.5s;
-}
-
-.event-where span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  font: 22px "#";
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  text-align: center;
-}
-.event-where span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0.9;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.event-where:hover span {
-  padding-right: 25px;
-  color: rgba(255, 255, 255, 0.95);
-  background: rgba(0, 0, 0, 0.75);
-}
-
-.event-where:hover span:after {
-  opacity: 1;
-  right: 0;
-  font: 12px Helvetica #FFFFFF;
-}
-
-time.icon
-{
-  font-size: 1em;
-  display: block;
-  position: relative;
-  width: 95%;
-  height: 8.5em;
-  background-color: #fff;
-  border-radius: 0.5em;
-  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 0 0 1px #bdbdbd;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-time.icon *
-{
-  display: block;
-  width: 100%;
-  font-size: 1em;
-  font-weight: bold;
-  font-style: normal;
-  text-align: center;
-}
-
-time.icon strong
-{
-  position: absolute;
-  top: 0;
-  padding: 0.4em 0;
-  color: #fff;
-  background-color: #df421a;
-  box-shadow: 0 2px 0 #e6522c;
-}
-#strongpast{
-  background-color: #726E6D;
-}
-
-time.icon em
-{
-  position: absolute;
-  margin-top: 5.5em;
-  color: #df421a;
-}
-
-time.icon span
-{
-  font-size: 2.8em;
-  letter-spacing: -0.05em;
-  padding-top: 0.8em;
-  color: #2f2f2f;
-}
-#spanpast{
-  color: #726E6D;
-}
-
-time.icon p
-{
-  letter-spacing: -0.05em;
-  margin-top: 0.8em;
-  color: #2f2f2f;
-}
-#ppast{
-  color: #726E6D;
-}
-
-/*Images for venues*/
-#amicimiei{
-  background: url(imgvenues/amicimiei.jpg);
-}
-#chtis{
-  background: url(imgvenues/chtis.jpg);
-}
-#duomo{
-  background: url(imgvenues/al-duomo.jpg);
-}
-#coffee{
-  background: url(imgvenues/room76.jpg)
-}
-#tasting{
-  background: url(imgvenues/tasting.jpg);
-}
-#giulia{
-  background: url(imgvenues/giulia.jpg);
-}
-#nuposto{
-  background: url(imgvenues/nuposto.jpg);
-}
-#spritz{
-  background: url(imgvenues/spritz.jpg);
-}
-#vip{
-  background: url(imgvenues/vip.jpg);
-}
-#voting{
-  background: url(imgvenues/voting.jpg);
-}
-
-/*Maps*/
-#maps{
-  width: 98%;
-  margin-top: 40px;
-}
-#maps *{
-  margin: 0px;
-}
-#mapon, #mapoff {
-  height: 460px;
-  margin-top: 20px;
-}
-
-/*Topbutton*/
-#topBtn {
-  display:none;
-  position: fixed;
-  bottom: 2vh;
-  right: 0.75vw;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #F75D59;
-  opacity: 0.9;
-  color: white;
-  padding: 8px;
-  border-radius: 20%;
-  font-size: 18px;
-}
-
-#topBtn:hover {
-  background-color:white;
-  color: #F75D59;
 }
 
 /*Colours*/
