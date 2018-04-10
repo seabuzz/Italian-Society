@@ -2,6 +2,7 @@ html,body{
   height:100%;
   text-align: center;
   font-family: "Nunito", sans-serif;
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -45,7 +46,7 @@ h3{
 }
 
 p{
-
+  font-size: 15px;
 }
 
 /*Sidebar*/
