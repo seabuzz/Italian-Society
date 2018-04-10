@@ -22,22 +22,35 @@
 .event-date {
   width: 18%;
   max-width: 130px;
+  min-width: 80px;
   float: left;
   margin: 10px 15px 0 0;
+}
+@media(max-width: 300px){
+  .event-date{ text-align: center;}
 }
 .event-info{
   width: 52%;
   padding: 0 5px;
   float: left;
 }
+@media(max-width: 300px){
+  .event-info{}
+}
+
 .event-title{
   font: bold 20px Helvetica, Verdana, sans-serif;
+}
+@media(max-width: 300px){
+  .event-title{float:right; font-size:16px;}
 }
 .event-description{
   padding-top: 8px;
   padding-bottom: 5px;
 }
-
+@media(max-width: 300px){
+  .event-description{float:none;}
+}
 .event-where{
   width: 25%;
   max-width: 280px;
@@ -116,6 +129,7 @@ time.icon strong
 }
 #strongpast{
   background-color: #726E6D;
+  box-shadow: 0 2px 0 #726E6D;
 }
 
 time.icon em
@@ -164,6 +178,12 @@ time.icon p
 }
 #giulia{
   background: url(imgvenues/giulia.jpg);
+}
+#med{
+  background: url(imgvenues/med.jpg);
+}
+#med_feb{
+  background: url(imgvenues/med_feb.jpg);
 }
 #nuposto{
   background: url(imgvenues/nuposto.jpg);
