@@ -1,141 +1,217 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+  <title> Italian Society - University of Sussex</title>
+  <meta name="description" content="The Italian Society is part of the Students' Union at the University of Sussex. It is more than a society, it is a family for all students far from home. We bring together students around food, fun, and cultural exchange. There is no membership fee and no obligation to commit to anything.">
+  <meta name="keywords" content="italiansocietysussexuni, sussexstudent, sussex, society, italian, italiansociety, mediterranean, events">
+  <meta name="author" content="Antonia Donvito, Elena Buzzi">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="cssjoin.css">
-  <link rel="stylesheet" type="text/css" href="cssteam.css">
-    <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 
-<header>
-  <!--Navigation bar-->
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">HOME</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">HISTORY</a></li>
-                <li><a href="#">OUR MISSION</a></li>
-              </ul>
-          </li>
-        <li><a href="team.html">MEET THE TEAM</a></li>
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="join.html">CONTACT/JOIN</a></li>
-      </ul>
-
-    <!--Social buttons-->
-    <div class="social">
-<a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target=”_blank”></a>
-<a href="https://www.instagram.com/sussexitaliansociety/" class="fa fa-instagram" target=”_blank”></a>
-<a href="https://twitter.com/SussexItalians" class="fa fa-twitter" target=”_blank”></a>
-</div>
-
-    </ul>
-    </div>
-  </nav>
-</header>
-
-
 <body>
+  <!--Sidebar on large screens-->
+  <div id="sidebar-wrapper">
+    <div class="container-fluid hide-small hide-medium" id="mainMenu-container">
 
-<h1> Our committee</h1>
+      <div class="row">
+        <div class="col-md-2">
 
-<div class="table">
-  <div class="row">
-    <div class="column">
-        <div class="container">
-      <img class="circular" src=lucaes.jpg>
-      <div class="overlay">
-        <div class="text">Ciao sono il presidente Luca e vengo da lalala ovviamente anche a me piace la pizza. Cosa succede se scrivo più cose e più testo. DIciamo che almeno 6 o 7 righe si riescono a scrivere, no?</div>
+          <!-- menu -->
+          <div id="MainMenu">
+            <div class="list-group panel black large">
+              <a class="list-group-item sidebar-brand white" data-parent="#MainMenu">
+                <div><img src="logo.png">
+                </div>
+              </a>
+              <a href="index.html" class="list-group-item" data-parent="#MainMenu"><i class="material-icons xxlarge home">home</i></a>
+              <a href="#about" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">ABOUT</a>
+              <div class="collapse" id="about">
+                <a href="about.html#mission" class="list-group-item medium">Our mission</a>
+                <a href="about.html#history" class="list-group-item medium">Our history</a>
+                <a href="about.html#membership" class="list-group-item medium">Membership</a>
+              </div>
+              <a href="#events" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">EVENTS</a>
+              <div class="collapse" id="events">
+                <a href="events.html" class="list-group-item medium">Our events</a>
+                <a href="events.html#maps" class="list-group-item medium">Find the venue</a>
+              </div>
+
+              <a href="defteam.html" class="list-group-item" data-parent="#MainMenu">COMMITTEE</a>
+              <a href="contact.html" class="list-group-item" data-parent="#MainMenu">CONTACT</a>
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </div>
-    <figcaption>Luca Pizzimenti</figcaption>
+
   </div>
-    <div class="column">
-      <div class="container">
-        <img class="circular" src=lauraes.jpg>
-          <div class="overlay">
-            <div class="text">Questo è invece un altro esempio! Ciao ciao sono Elena e vengo da lalala ovviamente anche a me piace la pizza. Cosa succede se scrivo più cose e più testo. DIciamo che almeno 6 o 7 righe si riescono a scrivere, no?</div>
+
+  <!-- Navbar on small and medium screens (Hidden on large screens) -->
+  <div class="top hide-large" id="myNavbar">
+    <div class="bar opacity hover-opacity-off center small">
+      <a href="index.html" class="bar-item button" style="width:20% !important">HOME</a>
+      <a href="about.html" class="bar-item button" style="width:20% !important">ABOUT</a>
+      <a href="events.html" class="bar-item button" style="width:20% !important">EVENTS</a>
+      <a href="defteam.html" class="bar-item button" style="width:20% !important">TEAM</a>
+      <a href="contact.html" class="bar-item button" style="width:20% !important">CONTACT</a>
+    </div>
+  </div>
+
+
+  <!--Contact-->
+  <section id="page-content-wrapper">
+    <div id="section-contact">
+      <h2 id=title-committee> Our committee</h2>
+      <div class="cards">
+        <section class="container">
+          <div class="page-header">
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="mc-content">
+                <div class="img-container">
+                  <img class="img-responsive" src="lucaes.jpg" style="width: 85%">
+                </div>
+
+                <div class="mc-description"><p style="color: black" id="luca">Ciao a tutti amici cari anche oggi voglio parlarvi della pizza che è l'amore della mia vita ma sono aperta anche ad altri tipi di cucine ad esempio altra pizza flusso di coscienza di Joyce ma credo comunque che un altro po' di testo si possa aggiungere in base ai nostri gusti</p></class>
+                  <button id="bluca"><h3><span><strong>Luca<strong></h3>
+                    <i class="material-icons w3-xlarge">person</i> President</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="mc-content">
+                <div class="img-container">
+                  <img class="img-responsive" src="elenaes.jpg" style="width: 85%">
+                </div>
+                <div class="mc-description"><p id="elena" style="color: black" >Ciao a tutti amici cari anche oggi voglio parlarvi della pizza che è l'amore della mia vita ma sono aperta anche ad altri tipi di cucine ad esempio altra pizza flusso di coscienza di Joyce ma credo comunque che un altro po' di testo si possa aggiungere in base ai nostri gusti</p></class>
+                  <button id="belena"><h3><span><strong>Elena<strong></h3>
+                    <i class="material-icons w3-xlarge">person</i> Events Officer</span></button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="mc-content">
+                  <div class="img-container">
+                    <img class="img-responsive" src="lauraes.jpg" style="width: 85%">
+                  </div>
+                  <div class="mc-description"><p id="laura" style="color: black" >Ciao a tutti amici cari anche oggi voglio parlarvi della pizza che è l'amore della mia vita ma sono aperta anche ad altri tipi di cucine ad esempio altra pizza flusso di coscienza di Joyce ma credo comunque che un altro po' di testo si possa aggiungere in base ai nostri gusti</p></class>
+                    <button id="blaura"><h3><span><strong>Laura<strong></h3>
+                      <i class="material-icons w3-xlarge">person</i> Acitvities & Planning</span></button>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </class>
+
+          </br>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="mc-content">
+                <div class="img-container">
+                  <img class="img-responsive" src="joshes.jpg" style="width: 85%">
+                </div>
+                <div class="mc-description">
+                  <p style="color: black" id="josh">Ciao a tutti amici cari anche oggi voglio parlarvi della pizza che è l'amore della mia vita ma sono aperta anche ad altri tipi di cucine ad esempio altra pizza flusso di coscienza di Joyce ma credo comunque che un altro po' di testo si possa aggiungere in base ai nostri gusti</p>
+                </class>
+                <button id="bjosh">
+                  <h3><span><strong>Josh<strong></h3>
+                    <i class="material-icons w3-xlarge">person</i> Treasurer</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="mc-content">
+                <div class="img-container">
+                  <img class="img-responsive" src="silviaes.jpg" style="width: 85%">
+                </div>
+                <div class="mc-description">
+                  <p style="color: black" id="silvia">Ciao a tutti amici cari anche oggi voglio parlarvi della pizza che è l'amore della mia vita ma sono aperta anche ad altri tipi di cucine ad esempio altra pizza flusso di coscienza di Joyce ma credo comunque che un altro po' di testo si possa aggiungere in base ai nostri gusti</p>
+                </class>
+                <button id="bsilvia">
+                  <h3><span><strong>Silvia<strong></h3>
+                    <i class="material-icons w3-xlarge">person</i> Vice President</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="mc-content">
+                <div class="img-container">
+                  <img class="img-responsive" src="joinus3.jpg" style="width: 85%">
+                </div>
+                <div class="mc-description">
+                  <p style="color: black; padding: 15px; font-size:20px;" id="silvia">Committe positions now open.</br></p>
+                </class>
+                <button id="bsilvia">
+                  <h3><span><strong><a href="https://www.facebook.com/italiansocietysussexuni/posts/1790855907883797" id="committee-link" target=”_blank”>Join us!</a><strong></br></h3>
+                  <i class="fas fa-users" style="font-size: 20px"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <figcaption>Laura Spagliardi </figcaption>
-       </div>
+      </class>
 
+      <!-- <footer class="site-footer">
+    </br>
+    <p class="left">University of Sussex</br>
+    Falmer House, Falmer</br>
+    Brighton BN1 9QF</br>
+    United Kingdom</p>
+    <img class="ussulogo" src="ussulogo1.png">
 
-    <div class="column">
-      <div class="container">
-        <img class="circular" src=elenaes.jpg class="image">
-          <div class="overlay">
-            <div class="text">Questo è invece un altro esempio! Ciao ciao sono Elena e vengo da lalala ovviamente anche a me piace la pizza. Cosa succede se scrivo più cose e più testo. DIciamo che almeno 6 o 7 righe si riescono a scrivere, no?</div>
-          </div>
-        </div>
-        <figcaption>Elena Buzzi</figcaption>
-      </div>
-    </div>
+    <div class="right" >
 
-  <div class="row">
-    <div class="column">
-      <div class="container">
-      <img class="circular" src=silviaes.jpg>
-      <div class="overlay">
-        <div class="text">XCiao sono Silvia! e vengo da lalala ovviamente anche a me piace la pizza. Cosa succede se scrivo più cose e più testo. DIciamo che almeno 6 o 7 righe si riescono a scrivere, no?</div>
-      </div>
-    </div>
-      <figcaption>Silvia Anderle</figcaption>
-    </div>
-
-    <div class="column">
-      <div class="container">
-        <img class="circular" src=joshes.jpg>
-        <div class="overlay">
-          <div class="text">Ciao Sono joshhhhhh anche a me piace la pizza anzi io stesso sono una pizza con l'ananas giusto per cambiare e essere originali insomma ciao ciao buonanotte va bene così o no?</div>
-        </div>
-      </div>
-      <figcaption>Joshua Ricci</figcaption></div>
-
-
- <div class="column">
-   <div class="container">
-      <img class="circular" src=vector.jpg>
-      <div class="overlay">
-        <div class="text"><a href ="https://www.facebook.com/italiansocietysussexuni/posts/1790855907883797" target="_blank"><button>Read more</button></a>
-        </div>
-      </div>
+    <div class="social">
+    <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-facebook" target="_blank" style></a>
+    <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-instagram" target=”_blank”></a>
+    <a href="https://www.facebook.com/italiansocietysussexuni/" class="fa fa-twitter" target=”_blank”></a>
   </div>
-  <figcaption>POSITIONS OPEN!</figcaption>
-  </div>
+  <p>italian.society.sussex@gmail.com</p>
+  <form action="/action_page.php">
+  <div class="container">
+  <input type="text" placeholder="Email address" name="mail" required>
+  <input type="submit" value=">">
 </div>
-<!--Footer-->
-<footer id="page-footer">
-  <hr>
-    <div class="container">
+</form>
 
 
-    <div>
-      <img class="logo" src=italianlogowhite.gif>
-        <form action="/mailing_list.php" method="post" target="_blank" class="pull-right">
-          <fieldset>
-          Email: <input type="text" name="email" size="35" placeholder="Your email" value="" />
-          <input type="submit" name="submit" class="btn-sm btn-success" value="Join Our Mailing List"/>
-          </fieldset>
-        </form>
-      <p>Membership is free.
-        <br>
-        Become a member of the Society by logging in on the <a href="https://www.sussexstudent.com/organisation/italian/">Students' Union website </a>
-      </p>
-    </div>
+</div>
 
-    </footer>
+</footer> -->
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+
+</section>
+
 
 </body>
+
 </html>
