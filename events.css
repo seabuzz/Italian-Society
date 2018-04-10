@@ -128,7 +128,7 @@ time.icon strong
   background-color: #df421a;
   box-shadow: 0 2px 0 #e6522c;
 }
-#strongpast{
+time.icon > .strongpast{
   background-color: #726E6D;
   box-shadow: 0 2px 0 #726E6D;
 }
@@ -147,7 +147,7 @@ time.icon span
   padding-top: 0.8em;
   color: #2f2f2f;
 }
-#spanpast{
+time.icon > .spanpast{
   color: #726E6D;
 }
 
@@ -157,7 +157,7 @@ time.icon p
   margin-top: 0.8em;
   color: #2f2f2f;
 }
-#ppast{
+time.icon > .ppast{
   color: #726E6D;
 }
 
