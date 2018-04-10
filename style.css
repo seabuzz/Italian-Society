@@ -25,12 +25,7 @@ html,body{
 
 .medium-padding{padding:10px;}
 .large-padding{padding:20px;}
-
-h1{
-  padding: 0;
-  margin: 0;
-  font: bold 80px "Saira Extra Condensed", sans-serif;
-}
+@media (max-width:560px){.large-padding{padding:6px;}}
 
 h2{
   font-size: 60px;
@@ -157,7 +152,7 @@ p{
 .bar{width:100%;overflow: hidden;}
 
 .bar .bar-item{
-  padding: 8px 16px;
+  padding: 8px 0px;
   float: left;
   width: 20% !important;
   border: none;
@@ -208,6 +203,11 @@ p{
 /*ABOUT*/
 #container_about{
   width: 90%;
+}
+@media(max-width:992px){
+  #container_about{
+    width:100%;
+  }
 }
 
 ul.circle{
