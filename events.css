@@ -68,10 +68,10 @@
   display: inline-block;
   position: relative;
   transition: 0.5s;
-  font: 22px "#";
-  color: rgba(255, 255, 255, 0.8);
+  font: 20px "Acme";
+  color: rgba(255, 255, 255, 0.9);
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
+  border-radius: 4%;
   text-align: center;
 }
 .event-where span:after {
@@ -163,43 +163,43 @@ time.icon > .ppast{
 
 /*Images for venues*/
 #amicimiei{
-  background: url(imgvenues/amicimiei.jpg);
+  background: url(img_venues/amicimiei.jpg);
 }
 #chtis{
-  background: url(imgvenues/chtis.jpg);
+  background: url(img_venues/chtis.jpg);
 }
 #duomo{
-  background: url(imgvenues/al-duomo.jpg);
+  background: url(img_venues/al-duomo.jpg);
 }
 #coexist_quiz{
-  background: url(imgvenues/coexist_quiz.jpg);
+  background: url(img_venues/coexist_quiz.jpg);
 }
 #coffee{
-  background: url(imgvenues/room76.jpg)
+  background: url(img_venues/room76.jpg)
 }
 #tasting{
-  background: url(imgvenues/tasting.jpg);
+  background: url(img_venues/tasting.jpg);
 }
 #giulia{
-  background: url(imgvenues/giulia.jpg);
+  background: url(img_venues/giulia.jpg);
 }
 #med{
-  background: url(imgvenues/med.jpg);
+  background: url(img_venues/med.jpg);
 }
 #med_feb{
-  background: url(imgvenues/med_feb.jpg);
+  background: url(img_venues/med_feb.jpg);
 }
 #nuposto{
-  background: url(imgvenues/nuposto.jpg);
+  background: url(img_venues/nuposto.jpg);
 }
 #spritz{
-  background: url(imgvenues/spritz.jpg);
+  background: url(img_venues/spritz.jpg);
 }
 #vip{
-  background: url(imgvenues/vip.jpg);
+  background: url(img_venues/vip.jpg);
 }
 #voting{
-  background: url(imgvenues/voting.jpg);
+  background: url(img_venues/voting.jpg);
 }
 
 /*Maps*/
