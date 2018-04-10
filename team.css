@@ -1,5 +1,4 @@
 /*COMITTEE*/
-
 #title-committee{
   margin-top: 4vh;
   text-align: center;
@@ -37,7 +36,8 @@ p {
   background-color: rgba(250, 250, 250, 0.6);
   position: relative;
 }
-.material-icons {
+
+.material-icons.profile {
   vertical-align:-14%
 }
 

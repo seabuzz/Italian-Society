@@ -100,7 +100,7 @@ p{
 
 .list-group.panel > .list-group-item:hover{
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.78;
   transition: 0.5s linear;
 }
 
@@ -151,25 +151,6 @@ p{
   text-decoration: none;
   color:white;
 }
-
-.bar{
-  background-color: rgba(0, 0, 0, 0.78);
-  color:grey;
-}
-
-.bar:hover{
-  background-color: rgba(0, 0, 0, 0.5);
-  color:white;
-}
-
-.bar-item:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.bar{width:100%;overflow:hidden}
-.bar .bar-item{padding:8px 16px; float:left; width:auto; border:none;display:block;outline:0}
-.bar .dropdown-hover,.bar .dropdown-click{position:static;float:left}
-.bar .button{white-space:normal}
 
 /*Other elements common to all pages*/
 #page-content-wrapper {
