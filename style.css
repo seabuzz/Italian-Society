@@ -108,6 +108,9 @@ p{
 .hide-small > .carousel-inner > .item img{
   opacity:0.8;
 }
+.hide-large > .carousel-inner > .item img{
+  opacity:0.9;
+}
 
 .list-group.panel > .sidebar-brand{
   height: 60px;
@@ -149,6 +152,7 @@ p{
 #myNavbar *{
   text-decoration: none;
   color:white;
+  line-height: 28px;
 }
 .bar{width:100%;overflow: hidden;}
 
