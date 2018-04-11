@@ -45,3 +45,15 @@ $(document).ready(function(){
     });
 });
 
+/*video autoplay*/
+$("#video1").each(function(){
+    if ($(this).is(":in-viewport")) {
+        $(this)[0].play();
+    } else {
+        $(this)[0].pause();
+    }
+})
+
+$('#myModal').on('hidden.bs.modal', function () {
+  $('#video1')[0].pause();
+})

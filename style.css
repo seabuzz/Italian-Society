@@ -105,7 +105,7 @@ p{
   padding: 8px;
 }
 
-.carousel-inner > .item img{
+.hide-small > .carousel-inner > .item img{
   opacity:0.8;
 }
 
