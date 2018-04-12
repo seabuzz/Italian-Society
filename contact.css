@@ -1,3 +1,7 @@
+.section {
+  length: 100%;
+}
+
 #page-content-wrapper{
   text-align: left;
 }
@@ -21,13 +25,12 @@ p {
   margin-top: 1vh;
 }
 .pic {
-  width: 30%;
+  width: 350px;
   length: auto;
   float: right;
-  margin-right: 10%;
-  margin-left: 5%;
-  margin-top: -32%;
-  position: relative;
+  margin-right: 60px;
+  margin-left: 0px;
+  margin-top: -350px;
   border-radius: 5%;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -71,19 +74,53 @@ input[type=submit]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .col-25, .col-75, input[type=submit] {
-    width: 50%;
-    margin-top: 0;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .pic{
+    width: 360px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .pic {
+    float: center;
+
+    margin-top: 20px;
   }
 }
 
+@media screen and (max-width: 500px) {
+  .pic {
+    width: 360px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .pic {
+    width: 200px;
+    position: absolute;
+
+    margin: 0 auto;
+  }
+}
 /*social buttons*/
 .social {
   margin: 20px;
   text-align: center;
   position: relative;
-  margin-top: 2%
+  margin-top: 2%;
+  padding-bottom: 40px;
 }
 .fab {
   padding: 10px 15px;
@@ -103,7 +140,7 @@ input[type=submit]:hover {
   margin: 20px;
 }
 
-.fa-twitter {
+#contact{
   border: 2px solid #55ACEE;
   color: #55ACEE;
   margin: 20px;
@@ -133,8 +170,146 @@ input[type=submit]:hover {
   background-color: #D7DDEA;
 }
 
-.fa-twitter:hover {
+#contact:hover {
   color: #4489BE;
   border: 2px solid #4489BE;
   background-color: #EEF6FD;
+}
+
+@media(max-width: 800px) {
+  .fab {
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px;
+
+  }
+}
+@media(max-width: 800px){
+  .fa-facebook-f {
+    padding: 5px 10px;
+  }
+}
+
+/*footer*/
+
+.footer {
+  margin: 0;
+  margin-left: 0px;
+  padding: 0px;
+  height: 120px;
+  background-color: #2F393C;
+  margin-top: 162px;
+
+}
+
+.footer-left{
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  text-align: left;
+}
+.footer-right{
+  float: right;
+  text-align: left;
+  margin-right: 20px;
+}
+.footer-center {
+  float: center;
+  text-align: center;
+}
+.ussulogo {
+  margin-top: 60px;
+}
+.text {
+  margin: 0px;
+  font-size: 15px;
+  margin-right: 5px;
+  }
+
+
+  .glyphicon{
+  text-align: center;
+  padding: 8px;
+  background-color: #33383b;
+  border-radius:50%;
+  color: white;
+  margin: 3px;
+}
+
+/* Footer social icons */
+
+.footer-icons{
+	margin-top: 10px;
+  text-align: center;
+}
+
+.footer-icons a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 15px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+}
+@media(max-width: 995px) {
+  .footer {
+    margin-left:0px;
+    height: 200px;
+    margin-top: 90px;
+
+  }
+}
+@media(max-width: 800px){
+  .footer {
+    margin-top: 400px;
+  }
+}
+
+@media(max-width: 500px){
+  .footer-left, .footer-right, .footer-center {
+    float: center;
+    width: 500px;
+		margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 500px){
+  .footer-left, .footer-right, .footer-center {
+    float: center;
+    width: 500px;
+
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media(max-width: 500px){
+  .footer-left  {
+    text-align: left;
+
+  }
+}
+@media(max-width: 500px){
+  .footer-icons {
+    display: inline-block;
+    position: absolute;
+
+  }
+}
+
+@media(max-width: 500px){
+  .ussulogo {
+    margin-top: -100px;
+    float: right;
+    margin-left: 0px;
+
+  }
 }
