@@ -146,7 +146,7 @@ p{
 #social_index *:hover{
   background: transparent;
   font-size: 30px;
-  color: #4F92DE;
+  color: #649fe2;
 }
 
 /*Navbar*/
@@ -228,7 +228,6 @@ p{
   font-size: 15px;
   margin-right: 5px;
 }
-
 
 .glyphicon-map-marker, .glyphicon-envelope{
   text-align: center;
