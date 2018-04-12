@@ -12,12 +12,16 @@ h2{
 	margin: 20px auto 10px auto;
 }
 
-
+@media (max-width:600px){
+#bar_home{
+  width: 18% !important;
+}
+#bar_contact{
+  width: 22% !important;
+}
+}
 /*Events*/
 @media (max-width:600px){
-
-#event-list{
-}
 
 .event-list-item {
   margin: 5px auto;
