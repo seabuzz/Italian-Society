@@ -315,6 +315,10 @@ p{
   }
 }
 
+/*Mailchimp*/
+#mc_embed_signup{clear:left; width:100%; margin-top: 10px;}
+#mc-embedded-subscribe{float:right; margin-right:30px;}
+
 
 /* INDEX page */
 .carousel,.item,.active, .carousel-inner{
