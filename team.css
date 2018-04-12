@@ -88,3 +88,7 @@ button:hover span:after {
   margin-left: -80px;
   width: 115%;
 }
+
+p, #mc_embed_signup {
+  font-weight: normal;
+}
