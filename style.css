@@ -218,11 +218,12 @@ p{
   margin-right: 30px;
 }
 .footer-center {
-  float: center;
+  float: left;
   text-align: center;
 }
 .ussulogo {
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-left: -10px;
 }
 .text {
   margin: 0px;
