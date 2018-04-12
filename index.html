@@ -23,6 +23,7 @@
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="smallscreen.css" media="screen and (max-width:992px)">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme|Nunito" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -68,11 +69,11 @@
   <!-- Navbar on small and medium screens (Hidden on large screens) -->
   <div class="top hide-large" id="myNavbar">
     <div class="bar dark-dark-grey hover-dark-grey center">
-      <a href="index.html" class="bar-item hover-light-grey hover-text-dark-grey" >HOME</a>
+      <a href="index.html" class="bar-item hover-light-grey hover-text-dark-grey" id="bar_home">HOME</a>
       <a href="about.html" class="bar-item hover-light-grey hover-text-dark-grey" >ABOUT</a>
       <a href="events.html" class="bar-item hover-light-grey hover-text-dark-grey" >EVENTS</a>
       <a href="team.html" class="bar-item hover-light-grey hover-text-dark-grey" >TEAM</a>
-      <a href="contact.html" class="bar-item hover-light-grey hover-text-dark-grey" >CONTACT</a>
+      <a href="contact.html" class="bar-item hover-light-grey hover-text-dark-grey" id="bar_contact" >CONTACT</a>
     </div>
   </div>
 
@@ -95,7 +96,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="img_carousel/team.jpg" alt="Italian Society">
+          <img src="img_carousel/team.JPG" alt="Italian Society">
         </div>
 
         <div class="item">
@@ -160,8 +161,31 @@
     <header class="title hide-small">
       <img src="logowhite.png">
     </header>
+
+    <footer class="footer hide-large dark-dark-grey text-white" id="footer_index">
+      <div class="footer-right">
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/italiansocietysussexuni/"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/sussexitalians"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram" id="contact" style="color: white"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-left">
+        <i class="glyphicon glyphicon-map-marker"></i>
+        <strong>University of Sussex</strong></br>
+        <p class="text" style="margin-left: 36px; font-size: 14px">Brighton</br></p>
+        <i class="glyphicon glyphicon-envelope"></i>
+        <strong>italiansociety@gmail.com</strong></br>
+      </div>
+
+      <div class="footer-center">
+        <img class="ussulogo" src="ussulogo1.png" style="width: 50px">
+      </div>
+
+    </footer>
   </div>
-</div>
 
 
 <!-- jQuery and js -->

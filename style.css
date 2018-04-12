@@ -197,7 +197,11 @@ p{
   height: 120px;
   background-color: #708090;
   margin-top: 162px;
-
+}
+#footer_index{
+  height:110px;
+  margin-top:0px;
+  position: relative;
 }
 
 .footer-left{
@@ -325,8 +329,13 @@ p{
 .title img{
   width: 50%;
 }
-@media(max-width:1000px){
+@media(max-width:992px){
   .title{top: 20px; font-size: 20px;}
+}
+
+#myCarousel, #portraitCarousel, #page-content-wrapper{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 /*ABOUT*/
