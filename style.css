@@ -19,6 +19,7 @@ html,body{
 .right-align{text-align:right!important}
 .justify{text-align:justify!important}
 .center{text-align:center!important}
+@media (max-width:400px){.hide-xs{display:none!important}}
 @media (max-width:560px){.hide-small{display:none!important}}
 @media (min-width:993px){.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
 @media (max-width:992px) and (min-width:561px){.hide-medium{display:none!important}}
@@ -280,44 +281,40 @@ p{
     padding: 10px;
     margin-bottom: 10px;
   }
-}
 
-@media(max-width: 500px){
-  .footer-left, .footer-right, .footer-center {
-    float: center;
-    width: 500px;
-
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-}
-@media(max-width: 500px){
   .footer-left  {
     text-align: left;
-
   }
-}
-@media(max-width: 500px){
+
   .footer-icons {
     display: inline-block;
     position: absolute;
 
   }
-}
-
-@media(max-width: 500px){
   .ussulogo {
     margin-top: -100px;
     float: right;
     margin-left: 0px;
-
   }
 }
 
+@media(max-width: 400px){
+
+  .footer-left  {
+    font-size: 10px;
+  }
+
+  #mc_embed_signup{
+    display: none;
+  }
+
+}
+
+
 /*Mailchimp*/
-#mc_embed_signup{clear:left; width:100%; margin-top: 10px;}
-#mc-embedded-subscribe{float:right; margin-right:50px;}
+#mc_embed_signup{float:right; width:100%; margin-top: 14px;}
+#mce-EMAIL{width:100%;}
+#mc-embedded-subscribe{float:right;}
 
 input[type=text], select, textarea {
   border: 1px solid #ccc;
