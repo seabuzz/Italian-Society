@@ -223,7 +223,7 @@
   #topBtn {
     display:none;
     position: fixed;
-    bottom: 2vh;
+    bottom: 4vh;
     right: 0.75vw;
     z-index: 99;
     border: none;
