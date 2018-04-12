@@ -8,8 +8,6 @@ $('.carousel').carousel({
 });
 
 /*profile cards*/
-
-
 $(document).ready(function(){
     $("#belena").click(function(){
         $("#elena").slideToggle("slow");
@@ -17,15 +15,15 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $("#bluca").click(function(){
-        $("#luca").slideToggle("slow");
+    $("#bjosh").click(function(){
+        $("#josh").slideToggle("slow");
 
     });
 });
 
 $(document).ready(function(){
-    $("#bjosh").click(function(){
-        $("#josh").slideToggle("slow");
+    $("#bluca").click(function(){
+        $("#luca").slideToggle("slow");
 
     });
 });
