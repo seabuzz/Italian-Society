@@ -3,6 +3,7 @@ html,body{
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
+  background-color: #f1f1ee;
 }
 
 @media (max-width: 767px) {
@@ -197,7 +198,7 @@ p{
   padding: 0px;
   height: 120px;
   background-color: #708090;
-  margin-top: 162px;
+  margin-top: 80px;
 }
 #footer_index{
   height:110px;

@@ -38,7 +38,7 @@ p {
 }
 
 /*responsive form*/
-#lname, select, textarea {
+#lname, #fname, #subject {
   width: 100%;
   padding: 12px;
   resize: vertical;
@@ -66,7 +66,7 @@ p {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
-  .col-25, .col-75, input[type=submit], #submit_contact{
+  .col-25, .col-75, #submit_contact{
     width: 40%;
   }
   .pic{
@@ -74,7 +74,7 @@ p {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
   .pic {
     float: center;
     max-width: 30vw;
@@ -90,18 +90,36 @@ p {
     width: 200px;
   }
   .pic {
-    width: 200px;
     position: absolute;
-    margin: 0 auto;
+    max-width: 30vw;
+  }
+  .bottom{
+    position: absolute;
+    bottom: 10vh;
   }
 }
 
 
-
 @media screen and (max-width: 500px) {
   .pic {
-    width: 360px;
     margin-top: 0px;
     margin-right: 0px;
+  }
+}
+
+.pic-lg{
+  width:60vw;
+  margin-top: 20px;
+  margin-left: 5%;
+  border-radius: 5%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1500px) {
+  .pic{
+    margin-right:12vw;
+  }
+  .col-25, .col-75, #submit_contact{
+    width: 50vw;
   }
 }
