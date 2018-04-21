@@ -15,10 +15,6 @@
   z-index: 3;
 }
 
-.img-responsive {
-    /*qui va inseirto il border radius dell'immagine*/
-}
-
 .mc-description {
   background-color: #fbfbfa;
   width: 85%;
@@ -82,8 +78,4 @@ button:hover span:after {
   font-size: 30px;
   color: red;
   text-decoration: none;
-}
-
-p, #mc_embed_signup {
-  font-weight: normal;
 }
